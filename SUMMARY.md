@@ -8,7 +8,7 @@
 * [Team 6](team/chapter.md)
 * [Team 7](team/chapter.md)
 * [Team 8](team/chapter.md)
-* [Team 9](team/chapter.md)
+* [GitLab](gitlab/chapter.md)
 * [Team 10](team/chapter.md)
 * [Team 11](team/chapter.md)
 * [Team 12](team/chapter.md)
@@ -27,4 +27,3 @@
 * [Team 25](team/chapter.md)
 * [Team 26](team/chapter.md)
 * [Team 27](team/chapter.md)
-
