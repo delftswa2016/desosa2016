@@ -4,6 +4,7 @@
 **[Maikel Langezaal](https://github.com/Maikdani), [Yu Liang](https://github.com/jessicaly), [Chengxin Ma](https://github.com/MaChengxin) and [Martijn Cligge](https://github.com/mecligge).**
 
 _Delft University of Technology, 2016_
+
 ## Abstract
 
 _CodeCombat is an online multiplayer game designed for users to learn how to code. 
