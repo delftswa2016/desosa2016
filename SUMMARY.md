@@ -9,7 +9,7 @@
 * [Team 7](team/chapter.md)
 * [Team 8](team/chapter.md)
 * [Team 9](team/chapter.md)
-* [Team 10](team/chapter.md)
+* [Team guava](guava/chapter.md)
 * [Team 11](team/chapter.md)
 * [Team 12](team/chapter.md)
 * [Team 13](team/chapter.md)
