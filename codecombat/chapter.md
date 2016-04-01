@@ -389,7 +389,7 @@ The editors page user interface is not easy to understand for most users and the
 Furthermore, it is difficult to locate to editors page itself, since to get there the user has to navigate to the bottom of the homepage and find the small [‘community’ link](http://codecombat.com/community).
 This link directs the user to the editor page. The name of this link is not straightforward and easy to understand. 
 
-![Editor page](./images-team-codecombat/images/editor-page.png "Editor page")
+![Editor page](./images-team-codecombat/editor-page.png "Editor page")
 _Figure 11 The editor page user interface_
 
 The overall concept of CodeCombat is about teaching users how to code. 
