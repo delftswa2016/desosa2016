@@ -248,7 +248,7 @@ A limited number of configuration options can also be edited during runtime. Thi
 
 ### Configurable Feature Evolution
 
-CKAN has already been developed for years and open-sourced from the very beginning. A full [changelog](http://docs.ckan.org/en/latest/changelog.html) with detailed descriptions starting from 2009 (v0.10) is available for the evolution history and a [ideas and roadmap](https://github.com/ckan/ideas-and-roadmap/issues) is set for the direction of CKAN's evolution. These help a lot for our analysis of the evolution of CKAN's variability mechanisms and features. In [Figure 10](Figure10) we will highlight some of the most important configurable features as examples of the evolution. 
+CKAN has already been developed for years and open-sourced from the very beginning. A full [changelog](http://docs.ckan.org/en/latest/changelog.html) with detailed descriptions starting from 2009 (v0.10) is available for the evolution history and a [ideas and roadmap](https://github.com/ckan/ideas-and-roadmap/issues) is set for the direction of CKAN's evolution. These help a lot for our analysis of the evolution of CKAN's variability mechanisms and features. In [Figure 10](#Figure10) we will highlight some of the most important configurable features as examples of the evolution. 
 <div id="Figure10">
 
 ![feature-evolution](img/feature-change.jpg)
@@ -271,7 +271,7 @@ This open source project was build and developed by multiple developers. Documen
 
 While developing, some pieces of code may not work as intended. Bugs are inevitable even with a strict test process. The accumulation of defects may cause technical debt. There are a lot of [issues](https://github.com/ckan/ckan/issues?q=bug+label%3ABug) that report defects and some of them remain unsolved.
 
-[Figure 11](Figure11) illustrates the analysis result returned by [SonarQube](http://docs.sonarqube.org/). The majority of CKAN's technical debt is focused on efficiency and maintainability. These kinds of technical debt are mainly caused by non-standard code.  SonarQube gave CKAN a score of *A* and the technical debt ratio was 1.0%. Results indicate that code duplications account for 2.6% of CKAN files, which exists in 108 blocks and 23 files. <div id="Figure11"/>
+[Figure 11](#Figure11) illustrates the analysis result returned by [SonarQube](http://docs.sonarqube.org/). The majority of CKAN's technical debt is focused on efficiency and maintainability. These kinds of technical debt are mainly caused by non-standard code.  SonarQube gave CKAN a score of *A* and the technical debt ratio was 1.0%. Results indicate that code duplications account for 2.6% of CKAN files, which exists in 108 blocks and 23 files. <div id="Figure11"/>
 
 ![technical Debt](img/techincal_debt.png)
 
