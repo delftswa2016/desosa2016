@@ -60,7 +60,8 @@ Each CKAN instance can be themed to match the design of a certain organization. 
 
 <h2 id='3-stakeholders'>Stakeholders</h2>
 
-Making decisions regarding the CKAN project involves multiple stakeholders, each with different interests, requirements and needs. It is one of the most important tasks to correctly identify the stakeholders in order for the project to succeed, though this is often neglected in practice. In the following we discuss the different stakeholders based on [Rozansky and Woods](https://books.google.nl/books/about/Software_Systems_Architecture.html?id=ka4QO9kXQFUC) surrounding the CKAN project. First, a high-level diagram is shown that presents a simple overview. This is complemented by a more detailed description of each stakeholder and their influence.<div id="Figure2">
+Making decisions regarding the CKAN project involves multiple stakeholders, each with different interests, requirements and needs. It is one of the most important tasks to correctly identify the stakeholders in order for the project to succeed, though this is often neglected in practice. In the following we discuss the different stakeholders based on [Rozansky and Woods](https://books.google.nl/books/about/Software_Systems_Architecture.html?id=ka4QO9kXQFUC) surrounding the CKAN project. First, a high-level diagram is shown that presents a simple overview. This is complemented by a more detailed description of each stakeholder and their influence.
+<div id="Figure2">
 
 ![Stakeholder Overview](img/stakeholders2.png)
 
@@ -187,7 +188,7 @@ For CKAN, all new code or changes to existing code should have new or updated te
 
 ### Release Process
 
-The process of a new release starts with the creation of a new release branch. A release branch is the one that will be stabilized and eventually become the actual released version. *Beta releases* are branched of a certain point in master and will eventually become stable releases. Once the release branch has been thoroughly tested and is stable we can do a *final release*. A detailed release process can be found in [Figure 7](#Figure7). <div id="FIgure7">
+The process of a new release starts with the creation of a new release branch. A release branch is the one that will be stabilized and eventually become the actual released version. *Beta releases* are branched of a certain point in master and will eventually become stable releases. Once the release branch has been thoroughly tested and is stable we can do a *final release*. A detailed release process can be found in [Figure 7](#Figure7). <div id="Figure7">
 
 ![release process](img/release.png)
 
