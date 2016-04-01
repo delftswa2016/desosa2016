@@ -1,6 +1,6 @@
 # TensorFlow™ - Open Source Library for Machine Learning Applications
 <p align="center">
-  <img src="https://1.bp.blogspot.com/-gANdrsx2ceo/VkAzFQYZ8HI/AAAAAAAARXo/r25jef0dij4/s1600/2FNLTensorFlow.png" width="300">
+  <img src="images-team-tensorflow/TF.png" width="300">
 </p>
 
 <p align="center">
@@ -61,7 +61,7 @@ TensorFlow™ is a very active community consisting of a very diverse group of D
 The following figure plots each of the stakeholder according to its type:
 
 <p align="center">
-  <img src="https://github.com/delftswa2016/team-tensorflow/blob/master/images-team-tensorflow/D1/Stakeholder.model4.jpg" width="500">
+  <img src="images-team-tensorflow/Stakeholder.model4.jpg" width="500">
 </p>
 
                                    Figure 1. Stakeholder groups for TensorFlow
@@ -96,7 +96,9 @@ As many other libraries, TensorFlow™ requires features from other systems, not
 
 In figure 2 the relation between the surrounding elements and the TensorFlow™ library are illustrated.
 
-![alt text](https://github.com/delftswa2016/team-tensorflow/blob/master/[%22images-team-tensorflow%22%2C%20%22imagesFinal%22]/Context%20view.jpg) 
+<p align="center">
+  <img src="images-team-tensorflow/Contextview.png" width="500">
+</p>
 
                               Figure 2 Context diagram for TensorFlow™ 
 
@@ -111,7 +113,7 @@ TensorFlow™ 's root directory at GitHub is organized in five main subdirectori
 
 
 <p align="center">
-  <img src="https://github.com/delftswa2016/team-tensorflow/blob/master/%5B%22images-team-tensorflow%22%2C%20%22imagesFinal%22%5D/TensorFlowTree.png" >
+  <img src="images-team-tensorflow/TensorFlowTree.png" >
 </p>
 
 
@@ -178,7 +180,7 @@ In _Classify the Modules_ section, the modules have been classified into differe
 The system's layer organization is shown in the following figure:
 
 <p align="center">
-  <img src="https://github.com/delftswa2016/team-tensorflow/blob/master/%5B%22images-team-tensorflow%22%2C%20%22imagesFinal%22%5D/Structure.png">
+  <img src="images-team-tensorflow/Structure.png">
 </p>
 
                                   Figure 4. Structure model of the TensorFlow™
@@ -228,7 +230,7 @@ The next two subsections will detail the first two models since these are the mo
 Rozanski and Woods[[2](#rw)] state that the Runtime Platform model is the core of this view. It defines the set of hardware nodes required, the interconnection within the node, and software elements hosted in the hardware nodes. In order to build this model, it is important to understand how the system underlying mechanism works. According to the whitepaper[[3](#whp)], a user creates an algorithm in TensorFlow™ with the provided API and internally that algorithm is described by a graph that represents a dataflow computation. In the graph, each node corresponds to an operation (for example: an arithmetic operation), the values that flow along the edges are tensors (that's why it is called TensorFlow™!). The following figure obtained from the whitepaper[[3](#whp)] shows an example of TensorFlow™ code fragment with its corresponding computation graph:
 
 <p align="center">
-  <img src="https://github.com/delftswa2016/team-tensorflow/blob/master/%5B%22images-team-tensorflow%22%2C%20%22imagesFinal%22%5D/Deployment1.png">
+  <img src="images-team-tensorflow/Deployment1.png">
 </p>
 
 
@@ -239,7 +241,7 @@ The whitepaper[[3](#whp)] also mentions that the main components in TensorFlow�
 The following figure shows the runtime model for TensorFlow™:
 
 <p align="center">
-  <img src="https://github.com/delftswa2016/team-tensorflow/blob/master/%5B%22images-team-tensorflow%22%2C%20%22imagesFinal%22%5D/Deployment2.png">
+  <img src="images-team-tensorflow/Deployment2.png">
 </p>
 
 
@@ -254,7 +256,7 @@ The Runtime Platform Model describes a high level of communication between the c
 According to the whitepaper[[3](#whp)], once the master has run the placement algorithm, the graph is partitioned into a set of subgraphs, one per device, as shown in the left graph of the following figure:
 
 <p align="center">
-  <img src="https://github.com/delftswa2016/team-tensorflow/blob/master/%5B%22images-team-tensorflow%22%2C%20%22imagesFinal%22%5D/Deployment3.png">
+  <img src="images-team-tensorflow/Deployment3.png">
 </p>
 
 
