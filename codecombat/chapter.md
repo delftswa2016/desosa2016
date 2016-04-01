@@ -1,7 +1,7 @@
 # CodeCombat: learn how to code by playing a game.
-[![CodeCombat Logo](https://github.com/delftswa2016/team-codecombat/blob/master/FinalChapter/images/CodecombatLogo.png)](https://codecombat.com)
+[![CodeCombat Logo](./images-team-codecombat/CodecombatLogo.png)](https://codecombat.com)
 
-**[Maikel Langezaal](https://github.com/Maikdani?tab=activity), [Yu Liang](https://github.com/jessicaly), [Chengxin Ma](https://github.com/MaChengxin) and [Martijn Cligge](https://github.com/Maikdani?tab=activity).**
+**[Maikel Langezaal](https://github.com/Maikdani), [Yu Liang](https://github.com/jessicaly), [Chengxin Ma](https://github.com/MaChengxin) and [Martijn Cligge](https://github.com/mecligge).**
 
 _Delft University of Technology, 2016_
 ## Abstract
@@ -88,7 +88,7 @@ The game character can be seen on the left, and is controlled with the code edit
 An example of this is command `this.moveRight()` which moves a game character to the right. 
 In-game settings (like the sound volume, zoom in/out, and full-screen mode) and code editor settings (like enabling autocompletion of codes) can be configured by the user.
  
-![Screenshot of the game](https://github.com/delftswa2016/team-codecombat/blob/master/FinalChapter/images/in-game-interface.png)
+![Screenshot of the game](./images-team-codecombat/in-game-interface.png)
 _Figure 1 A screenshot of the game_
 
 Besides playing the regular game, CodeCombat offers users the option to create their own levels and game characters. 
@@ -136,7 +136,7 @@ This function depends on the programming language selection, user interface lang
 Also other functions, including the course system and the multiplayer mode, depend on this game play core. 
 The direction of the arrows indicates the dependency among the function elements.
 
-![CodeCombat functional view diagram](https://github.com/delftswa2016/team-codecombat/blob/master/FinalChapter/images/functional-view-diagram.png)
+![CodeCombat functional view diagram](./images-team-codecombat/functional-view-diagram.png)
 _Figure 2  CodeCombat functional view diagram_
 
 This brief overview showed that CodeCombat is a very feature-rich game with many different functions. 
@@ -155,7 +155,7 @@ The stakeholders are identified by looking at pull requests and issues on their 
 The complete set of stakeholders is shown in figure 3.
 Some of the most important are discussed below.
 
-![Complete overview of stakeholders](https://github.com/delftswa2016/team-codecombat/blob/master/FinalChapter/images/stakeholder-overview.png "Complete overview of stakeholders")
+![Complete overview of stakeholders](./images-team-codecombat/stakeholder-overview.png "Complete overview of stakeholders")
 _Figure 3 Complete overview of stakeholders_
 
 #### Developers and testers
@@ -166,7 +166,7 @@ The pull request and issue analysis shows that [Imperadeiro98](https://github.co
 They made and merged most of the pull requests and raised most of the issues.
 But, there are many more developers and testers can be found on the [Github contributors](https://github.com/codecombat/codecombat/graphs/contributors) tab and their website (see figure 4 for Github users, and figure 3 for developers on website). 
 
-![GitHub contributors](https://github.com/delftswa2016/team-codecombat/blob/master/FinalChapter/images/github-contributor.png "GitHub contributors")
+![GitHub contributors](./images-team-codecombat/github-contributor.png "GitHub contributors")
 _Figure 4 Github contributors_
 
 #### Acquirers, accessors, and maintainers
@@ -203,7 +203,7 @@ Competitors like [Code School](https://www.codeschool.com/) and [Codingame](http
 A rich set of stakeholders is the result of the stakeholder analysis.
 To get a more structured overview of the set of stakeholders with their power, a power interest matrix has been made (see in figure 5).
 
-![Power-interest matrix](https://github.com/delftswa2016/team-codecombat/blob/master/FinalChapter/images/power-interest-matrix.png "Power-interest matrix")
+![Power-interest matrix](./images-team-codecombat/power-interest-matrix.png "Power-interest matrix")
 _Figure 5 Power-interest matrix_
 
 The stakeholder analysis showed that Scott Erickson, Nick Winter are the most important people who are responsible for the development of the game.
@@ -244,7 +244,7 @@ The ten external entities are listed below:
 ### 5.3 Context view diagram
 The diagram below in figure 6 shows the context view of CodeCombat. 
 The context view diagram shows the system scope and responsibilities, external entities, as well as the most important stakeholders of section 4.
-![Context view diagram](https://github.com/delftswa2016/team-codecombat/blob/master/FinalChapter/images/context-view.png "Context view diagram")
+![Context view diagram](./images-team-codecombat/context-view.png "Context view diagram")
 _Figure 6 The context view diagram_
 
 <div id='6.'/>
@@ -261,7 +261,7 @@ The client side follows the [Model-View-Controller (MVC)](https://nl.wikipedia.o
 The choice of MVC results in an arhcitecture where new features can be added easily.  
 The server side follows the framework provided by [Express.js](http://expressjs.com). In figure 7, a modular structure model is displayed.
 
-![Modular structure diagram](https://github.com/delftswa2016/team-codecombat/blob/master/FinalChapter/images/module-structure.png "Modular structure diagram")
+![Modular structure diagram](./images-team-codecombat/module-structure.png "Modular structure diagram")
 _Figure 7 Modular structure of CodeCombat_
 
 The **presentation layer** provides users with the final view of the CodeCombat web application via a graphical user interface. 
@@ -329,7 +329,7 @@ The app and server folders are the core of the CodeCombat application, where the
 * The [bin folder](https://github.com/codecombat/codecombat/tree/master/bin) contains the development bash utility scripts and the folder of scripts contain information of the status of the system.
 * Lastly, the [spec folder](https://github.com/codecombat/codecombat/tree/master/spec) contains mostly files for testing and support. 
 
-![Codeline Organization model](https://github.com/delftswa2016/team-codecombat/blob/master/FinalChapter/images/codeline-structure.png "Codeline Organization model")
+![Codeline Organization model](./images-team-codecombat/codeline-structure.png "Codeline Organization model")
 _Figure 8 Codeline Organization model_
 
 Now that some more technical guidelines have been analyzed in this section, it is also important to focus on some more high-level guidelines which focus on the user interface. since many different types of users interact with the game.  
@@ -372,7 +372,7 @@ On this page, the users can easily navigate to their desired pages, namely the t
 On all of these pages only very little options are available for the users. 
 This results in an easy navigation for all of the users, whether they are experienced or not.
 
-![Homepage](https://github.com/delftswa2016/team-codecombat/blob/master/FinalChapter/images/homepage.png "Homepage")
+![Homepage](./images-team-codecombat/homepage.png "Homepage")
 _Figure 9 The homepage interface_
 
 The second user interface (see figure 10) the user can interact with is the in-game interface. 
@@ -381,7 +381,7 @@ The most buttons in the in-game interface are straightforward, but some of them 
 This results in that the users have to figure out the meaning of the buttons themselves. 
 Nonetheless, in the first level of the game a tutorial is given on how to use the system.
 
-![In-game interface](https://github.com/delftswa2016/team-codecombat/blob/master/FinalChapter/images/screenshot-of-the-game.png "In-game interface")
+![In-game interface](./images-team-codecombat/screenshot-of-the-game.png "In-game interface")
 _Figure  10 The in-game interface with the tutorial_
 
 The third user interface (see figure 11) the user can interact with is the editors page. 
@@ -389,7 +389,7 @@ The editors page user interface is not easy to understand for most users and the
 Furthermore, it is difficult to locate to editors page itself, since to get there the user has to navigate to the bottom of the homepage and find the small [‘community’ link](http://codecombat.com/community).
 This link directs the user to the editor page. The name of this link is not straightforward and easy to understand. 
 
-![Editor page](https://github.com/delftswa2016/team-codecombat/blob/master/FinalChapter/images/editor-page.png "Editor page")
+![Editor page](./images-team-codecombat/images/editor-page.png "Editor page")
 _Figure 11 The editor page user interface_
 
 The overall concept of CodeCombat is about teaching users how to code. 
@@ -404,7 +404,7 @@ Generally, the interfaces can be considered as self-explanatory, but some interf
 Some of the features described in section 2 of this chapter have a high variability. 
 The features and their variability are displayed in figure 12.
 
-![Feature model](https://github.com/delftswa2016/team-codecombat/blob/master/FinalChapter/images/feature-model.PNG "Feature model")
+![Feature model](./images-team-codecombat/feature-model.PNG "Feature model")
 _Figure 12 Feature model._
 
 The model displays the _settings_ feature variability on the left side, which consists of _game settings_ and _account settings_. 
