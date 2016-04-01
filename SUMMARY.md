@@ -5,7 +5,7 @@
 * [Team 3](team/chapter.md)
 * [Team 4](team/chapter.md)
 * [Team 5](team/chapter.md)
-* [Team 6](team/chapter.md)
+* [CodeCombat](codecombat/chapter.md)
 * [Team 7](team/chapter.md)
 * [Team 8](team/chapter.md)
 * [Team 9](team/chapter.md)
