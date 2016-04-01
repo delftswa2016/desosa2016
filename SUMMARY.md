@@ -24,7 +24,7 @@
 * [Team 22](team/chapter.md)
 * [Team 23](team/chapter.md)
 * [Team 24](team/chapter.md)
-* [Team 25](team/chapter.md)
+* [Wildfly](wildfly/Chapter.md)
 * [Team 26](team/chapter.md)
 * [Team 27](team/chapter.md)
 
