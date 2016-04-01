@@ -88,7 +88,7 @@ The game character can be seen on the left, and is controlled with the code edit
 An example of this is command `this.moveRight()` which moves a game character to the right. 
 In-game settings (like the sound volume, zoom in/out, and full-screen mode) and code editor settings (like enabling autocompletion of codes) can be configured by the user.
  
-![Screenshot of the game](./images-team-codecombat/in-game-interface.png)
+![Screenshot of the game](./images-team-codecombat/screenshot-of-the-game.png)
 _Figure 1 A screenshot of the game_
 
 Besides playing the regular game, CodeCombat offers users the option to create their own levels and game characters. 
@@ -381,7 +381,7 @@ The most buttons in the in-game interface are straightforward, but some of them 
 This results in that the users have to figure out the meaning of the buttons themselves. 
 Nonetheless, in the first level of the game a tutorial is given on how to use the system.
 
-![In-game interface](./images-team-codecombat/screenshot-of-the-game.png "In-game interface")
+![In-game interface](./images-team-codecombat/in-game-interface.png "In-game interface")
 _Figure  10 The in-game interface with the tutorial_
 
 The third user interface (see figure 11) the user can interact with is the editors page. 
