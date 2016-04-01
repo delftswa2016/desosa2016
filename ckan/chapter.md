@@ -216,7 +216,7 @@ Different from other Cloud services like Netflix, CKAN does not use a distribute
 
 #### Users, Organizations and Authorization
 
-As mentioned in Section [Usage Perspective](#2-usability-perspective), CKAN users are structured based on "organizations", for example Environment Agency from the UK government. Users within organizations can create, edit and publish datasets depending on their authorization level which can be configured by the system administrators. When an action is taken, the parameters passed to CKAN are validated against a schema. The schema contains a list of functions that will validate the value of the corresponding parameters like the existence of datasets, the user permissions, etc. These schemas are customizable by the system administrator. <div id="Figure 8">
+As mentioned in Section [Usage Perspective](#2-usability-perspective), CKAN users are structured based on "organizations", for example Environment Agency from the UK government. Users within organizations can create, edit and publish datasets depending on their authorization level which can be configured by the system administrators. When an action is taken, the parameters passed to CKAN are validated against a schema. The schema contains a list of functions that will validate the value of the corresponding parameters like the existence of datasets, the user permissions, etc. These schemas are customizable by the system administrator. <div id="Figure8">
 
 ### Data Flow
 
@@ -271,7 +271,7 @@ This open source project was build and developed by multiple developers. Documen
 
 While developing, some pieces of code may not work as intended. Bugs are inevitable even with a strict test process. The accumulation of defects may cause technical debt. There are a lot of [issues](https://github.com/ckan/ckan/issues?q=bug+label%3ABug) that report defects and some of them remain unsolved.
 
-[Figure 11](Figure11) illustrates the analysis result returned by [SonarQube](http://docs.sonarqube.org/). The majority of CKAN's technical debt is focused on efficiency and maintainability. These kinds of technical debt are mainly caused by non-standard code.  SonarQube gave CKAN a score of *A* and the technical debt ratio was 1.0%. Results indicate that code duplications account for 2.6% of CKAN files, which exists in 108 blocks and 23 files.
+[Figure 11](Figure11) illustrates the analysis result returned by [SonarQube](http://docs.sonarqube.org/). The majority of CKAN's technical debt is focused on efficiency and maintainability. These kinds of technical debt are mainly caused by non-standard code.  SonarQube gave CKAN a score of *A* and the technical debt ratio was 1.0%. Results indicate that code duplications account for 2.6% of CKAN files, which exists in 108 blocks and 23 files. <div id="Figure11"/>
 
 ![technical Debt](img/techincal_debt.png)
 
