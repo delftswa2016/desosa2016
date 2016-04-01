@@ -1,4 +1,4 @@
-![CKAN Logo](img/ckanlogo.png)
+![CKAN Logo](images-team-ckan/ckanlogo.png)
 
 #CKAN: The open source data portal
 
@@ -38,7 +38,7 @@ In this chapter of Delft Students on Software Architecture we will provide an in
 
 A CKAN instance serves as a place where data can be published and searched. The success of the system depends on the effectiveness of these tasks. Therefore, applying the usability perspective can ensure that the system is well suited to user needs. This perspective will also give the reader an impression of how a CKAN instance looks like by introducing several key features and how these facilitate high usability. CKAN features can be either accessed by an intuitive web interface or by other machines through a common API , here we mainly discuss the web interface. It is important to point out that there is a clear separation of the user interface and the functional processing. [Figure 1](#Figure1) presents a screenshot from [data.gov.uk](https://data.gov.uk/), an exemplary data portal powered by CKAN. Visitors for such a website are mostly researchers or individuals with intermediate computer experience.<div id="Figure1"/>
 
-![Stakeholder Overview](img/ckan-screenshot.png)
+![Stakeholder Overview](images-team-ckan/ckan-screenshot.png)
 
 *Figure 1, CKAN interface*
 
@@ -63,7 +63,7 @@ Each CKAN instance can be themed to match the design of a certain organization. 
 Making decisions regarding the CKAN project involves multiple stakeholders, each with different interests, requirements and needs. It is one of the most important tasks to correctly identify the stakeholders in order for the project to succeed, though this is often neglected in practice. In the following we discuss the different stakeholders based on [Rozansky and Woods](https://books.google.nl/books/about/Software_Systems_Architecture.html?id=ka4QO9kXQFUC) surrounding the CKAN project. First, a high-level diagram is shown that presents a simple overview. This is complemented by a more detailed description of each stakeholder and their influence.
 <div id="Figure2">
 
-![Stakeholder Overview](img/stakeholders2.png)
+![Stakeholder Overview](images-team-ckan/stakeholders2.png)
 
 *Figure 2, CKAN stakeholders*
 
@@ -79,7 +79,7 @@ Apart from the stakeholders defined in [Figure 2](#Figure2), we identify the **s
 
 To achieve a better understanding of the different stakeholders, we present a [power/interest](https://www.mindtools.com/pages/article/newPPM_07.htm) grid. that provides a simple view of how influential each stakeholder is and the degree of interest. Identifying key stakeholders that are authorized to make decisions is essential for any architect.<div id="Figure3">
 
-![Stakeholder Overview](img/power-interest.png)
+![Stakeholder Overview](images-team-ckan/power-interest.png)
 
 *Figure 3, power-interest grid*
 
@@ -91,7 +91,7 @@ With the service provided by CKAN, dataset owners are able to store and publish 
 
 [The context diagram](#Figure 4) presents the context of CKAN as well as the scenarios in which CKAN can be used. The CKAN Project is sponsored by the Advisory Group members who contribute resources, either through contributing money or providing in-kind resources such as staff time, for the development of CKAN. Some of the advisory group members, for example Open Knowledge, also provide technical support to other CKAN instances such as [UK open data protal](https://github.com/delftswa2016/team-ckan/blob/D6/d4/sub-documents/data.gov.uk). The data published on CKAN instances can be used for research purposes, commercial exploitation or individual interests. The Technical Team takes charge of code contributions, technical documentation and all other technical-related issues using [Github](https://github.com/), testci and many other developing tools. Volunteer Developers are people who are interested in the project and willing to contribute to some coding area, for example fixing bugs and writing extensions for the CKAN platform. Finally, CKAN is not the only open data solution, competitors like [FiscalNote](https://www.fiscalnote.com/) and [Socrata](https://www.socrata.com/) are playing the game as well.<div id="Figure4">
 
-![Context View](img/Context_view_v2.png)
+![Context View](images-team-ckan/Context_view_v2.png)
 
 *Figure 4, context view of ckan*
 
@@ -111,7 +111,7 @@ In order to gain understanding of the architecture, we present a [module structu
 2. Model Layer
 3. View Layer<div id="Figure5">
 
-![Module MVC](img/module_structure.png)
+![Module MVC](images-team-ckan/module_structure.png)
 
 *Figure 5, modules of CKAN*
 
@@ -178,7 +178,7 @@ CKAN's source code structure, coding standard and testing standard are discussed
 
 [Figure 6](#Figure6) illustrates the general structure of CKAN. Folder *ckan* contains the key modules of CKAN, including models, views, controllers (the [MVC](https://github.com/delftswa2016/team-ckan/blob/D6/d6/sub-documents/MVC) pattern), data migration module, test module etc. Folder *ckanext* holds the user libraries. Other folders contain configuration files, bins or documentation.<div id="Figure6">
 
-![codeline organization](img/codeline.png)
+![codeline organization](images-team-ckan/codeline.png)
 
 *Figure 6, code structure of CKAN*
 
@@ -190,7 +190,7 @@ For CKAN, all new code or changes to existing code should have new or updated te
 
 The process of a new release starts with the creation of a new release branch. A release branch is the one that will be stabilized and eventually become the actual released version. *Beta releases* are branched of a certain point in master and will eventually become stable releases. Once the release branch has been thoroughly tested and is stable we can do a *final release*. A detailed release process can be found in [Figure 7](#Figure7). <div id="Figure7">
 
-![release process](img/release.png)
+![release process](images-team-ckan/release.png)
 
 *Figure 7, release process of CKAN*
 
@@ -220,7 +220,7 @@ As mentioned in Section [Usage Perspective](#2-usability-perspective), CKAN user
 
 ### Data Flow
 
-![data flow](img/CKAN-information-flow.png)
+![data flow](images-team-ckan/CKAN-information-flow.png)
 
 *Figure 8. CKAN data flow*
 
@@ -230,7 +230,7 @@ We have seen the static structure in the previous two subsections. In this part,
 
 Many of CKAN's features can be enabled by downloading the corresponding plugins and include them in a configuration file. These add additional functionality to the CKAN core. The configuration file also contains settings for toggling certain features, some are dependent on one another. For example, specifying a default resource view requires that the corresponding plugin is loaded. Also, if datasets don't have to belong to an organization then creating unorganized users must also be enabled. A conflict between features can arise if both simple and faceted search is enabled. Finally, a language must be specified in the *Locales Offered* setting before it can be set as *Locale Default* or included in *Local Order*. A diagram from [FeatureIDE](http://wwwiti.cs.uni-magdeburg.de/iti_db/research/featureide/) is shown in [Figure 9](#Figure9) that visualizes some features and their dependencies. To keep the size manageable, only a selection of features are included that have some dependency.  <div id="Figure9">
 
-![feature IDE](img/feature_visualization.png)
+![feature IDE](images-team-ckan/feature_visualization.png)
 
 *Figure 9, CKAN feature IDE*
 
@@ -251,7 +251,7 @@ A limited number of configuration options can also be edited during runtime. Thi
 CKAN has already been developed for years and open-sourced from the very beginning. A full [changelog](http://docs.ckan.org/en/latest/changelog.html) with detailed descriptions starting from 2009 (v0.10) is available for the evolution history and a [ideas and roadmap](https://github.com/ckan/ideas-and-roadmap/issues) is set for the direction of CKAN's evolution. These help a lot for our analysis of the evolution of CKAN's variability mechanisms and features. In [Figure 10](#Figure10) we will highlight some of the most important configurable features as examples of the evolution. 
 <div id="Figure10">
 
-![feature-evolution](img/feature-change.jpg)
+![feature-evolution](images-team-ckan/feature-change.jpg)
 
 *Figure 10, several example configurable features evolution of CKAN, for example, search configuration, API configuration, authorization configuration and sysadmins configuration*
 
@@ -273,7 +273,7 @@ While developing, some pieces of code may not work as intended. Bugs are inevita
 
 [Figure 11](#Figure11) illustrates the analysis result returned by [SonarQube](http://docs.sonarqube.org/). The majority of CKAN's technical debt is focused on efficiency and maintainability. These kinds of technical debt are mainly caused by non-standard code.  SonarQube gave CKAN a score of *A* and the technical debt ratio was 1.0%. Results indicate that code duplications account for 2.6% of CKAN files, which exists in 108 blocks and 23 files. <div id="Figure11"/>
 
-![technical Debt](img/techincal_debt.png)
+![technical Debt](images-team-ckan/techincal_debt.png)
 
 *Figure 11, technical debt of CKAN*
 
