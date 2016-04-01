@@ -20,7 +20,7 @@
 * [Team 18](team/chapter.md)
 * [Team 19](team/chapter.md)
 * [Team 20](team/chapter.md)
-* [Team 21](team/chapter.md)
+* [Ruby on Rails - Always on Track](rails/chapter.md)
 * [Team 22](team/chapter.md)
 * [Team 23](team/chapter.md)
 * [Team 24](team/chapter.md)
