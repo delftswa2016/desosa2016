@@ -88,7 +88,7 @@ From [Figure 3](#Figure3) It is clear that the Steering Group has the most power
 
 With the service provided by CKAN, dataset owners are able to store and publish the raw data and metadata in well-structured and manageable ways. The users can then search for datasets of interest through both the website and APIs. CKAN also allows various extensions and plugins developed by third-party developers to enrich the functionalities of CKAN.
 
-[The context diagram](#Figure 4) presents the context of CKAN as well as the scenarios in which CKAN can be used. The CKAN Project is sponsored by the Advisory Group members who contribute resources, either through contributing money or providing in-kind resources such as staff time, for the development of CKAN. Some of the advisory group members, for example Open Knowledge, also provide technical support to other CKAN instances such as [UK open data protal](https://github.com/delftswa2016/team-ckan/blob/D6/d4/sub-documents/data.gov.uk). The data published on CKAN instances can be used for research purposes, commercial exploitation or individual interests. The Technical Team takes charge of code contributions, technical documentation and all other technical-related issues using [Github](https://github.com/), testci and many other developing tools. Volunteer Developers are people who are interested in the project and willing to contribute to some coding area, for example fixing bugs and writing extensions for the CKAN platform. Finally, CKAN is not the only open data solution, competitors like [FiscalNote](https://www.fiscalnote.com/) and [Socrata](https://www.socrata.com/) are playing the game as well.<div id="FIgure4">
+[The context diagram](#Figure 4) presents the context of CKAN as well as the scenarios in which CKAN can be used. The CKAN Project is sponsored by the Advisory Group members who contribute resources, either through contributing money or providing in-kind resources such as staff time, for the development of CKAN. Some of the advisory group members, for example Open Knowledge, also provide technical support to other CKAN instances such as [UK open data protal](https://github.com/delftswa2016/team-ckan/blob/D6/d4/sub-documents/data.gov.uk). The data published on CKAN instances can be used for research purposes, commercial exploitation or individual interests. The Technical Team takes charge of code contributions, technical documentation and all other technical-related issues using [Github](https://github.com/), testci and many other developing tools. Volunteer Developers are people who are interested in the project and willing to contribute to some coding area, for example fixing bugs and writing extensions for the CKAN platform. Finally, CKAN is not the only open data solution, competitors like [FiscalNote](https://www.fiscalnote.com/) and [Socrata](https://www.socrata.com/) are playing the game as well.<div id="Figure4">
 
 ![Context View](img/Context_view_v2.png)
 
@@ -104,11 +104,11 @@ CKAN's internal structure is adapted to the structure of the [Pylons Web Framewo
 
 ### Module Organization
 
-In order to gain understanding of the architecture, we present a [module structure diagram](#FIgure5). Three different layers can be identified:
+In order to gain understanding of the architecture, we present a [module structure diagram](#Figure5). Three different layers can be identified:
 
 1. Controller layer
 2. Model Layer
-3. View Layer<div id="FIgure5">
+3. View Layer<div id="Figure5">
 
 ![Module MVC](img/module_structure.png)
 
@@ -247,7 +247,7 @@ A limited number of configuration options can also be edited during runtime. Thi
 
 ### Configurable Feature Evolution
 
-CKAN has already been developed for years and open-sourced from the very beginning. A full [changelog](http://docs.ckan.org/en/latest/changelog.html) with detailed descriptions starting from 2009 (v0.10) is available for the evolution history and a [ideas and roadmap](https://github.com/ckan/ideas-and-roadmap/issues) is set for the direction of CKAN's evolution. These help a lot for our analysis of the evolution of CKAN's variability mechanisms and features. In [Figure 10](FIgure10) we will highlight some of the most important configurable features as examples of the evolution. 
+CKAN has already been developed for years and open-sourced from the very beginning. A full [changelog](http://docs.ckan.org/en/latest/changelog.html) with detailed descriptions starting from 2009 (v0.10) is available for the evolution history and a [ideas and roadmap](https://github.com/ckan/ideas-and-roadmap/issues) is set for the direction of CKAN's evolution. These help a lot for our analysis of the evolution of CKAN's variability mechanisms and features. In [Figure 10](Figure10) we will highlight some of the most important configurable features as examples of the evolution. 
 <div id="Figure10">
 
 ![feature-evolution](img/feature-change.jpg)
@@ -270,7 +270,7 @@ This open source project was build and developed by multiple developers. Documen
 
 While developing, some pieces of code may not work as intended. Bugs are inevitable even with a strict test process. The accumulation of defects may cause technical debt. There are a lot of [issues](https://github.com/ckan/ckan/issues?q=bug+label%3ABug) that report defects and some of them remain unsolved.
 
-[Figure 11](FIgure11) illustrates the analysis result returned by [SonarQube](http://docs.sonarqube.org/). The majority of CKAN's technical debt is focused on efficiency and maintainability. These kinds of technical debt are mainly caused by non-standard code.  SonarQube gave CKAN a score of *A* and the technical debt ratio was 1.0%. Results indicate that code duplications account for 2.6% of CKAN files, which exists in 108 blocks and 23 files.
+[Figure 11](Figure11) illustrates the analysis result returned by [SonarQube](http://docs.sonarqube.org/). The majority of CKAN's technical debt is focused on efficiency and maintainability. These kinds of technical debt are mainly caused by non-standard code.  SonarQube gave CKAN a score of *A* and the technical debt ratio was 1.0%. Results indicate that code duplications account for 2.6% of CKAN files, which exists in 108 blocks and 23 files.
 
 ![technical Debt](img/techincal_debt.png)
 
