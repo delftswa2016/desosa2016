@@ -100,7 +100,7 @@ Another important user that adopted the system in 2015 is the Defense Informatio
 To identify which stakeholders are necessary to manage closely it can be helpful to place them in a Power/Interest grid as can be seen in [Figure 1](#Figure1):
 
 <a name="Figure1"></a>
-![Power/Interest grid](images-team-bigbluebutton/Power-interest.png)
+![Power/Interest grid](images-team-bigbluebutton/Power-interest.png)  
 *Figure 1: Power/Interest grid of stakeholders*
 
 
