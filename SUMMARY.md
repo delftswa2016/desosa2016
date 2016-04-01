@@ -22,7 +22,7 @@
 * [Team 20](team/chapter.md)
 * [Team 21](team/chapter.md)
 * [Team 22](team/chapter.md)
-* [Team 23](team/chapter.md)
+* [TensorFlow - Open Source Library for Machine Learning Applications](tensorflow/chapter.md)
 * [Team 24](team/chapter.md)
 * [Team 25](team/chapter.md)
 * [Team 26](team/chapter.md)
