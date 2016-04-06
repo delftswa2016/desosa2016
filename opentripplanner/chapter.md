@@ -54,12 +54,12 @@ There are two main types of people who use the system. There are the users who b
 At last the end-users have to be mentioned. The end-users will use the app, website or other solution build on top of OTP, e.g. to plan a trip. Because this group of users is not directly involved in OTP (they will never directly use OTP), they are out of scope for this chapter.
 
 ![Benefiters vs Developers, Users vs Providers](images-team-opentripplanner/companies.png)
-_Figure 1: Categorization of the users_
+_Categorization of the users_
 
 #### Contributors
 It's hard to make a distinction between different types of contributors. There are no explicit testers, documentation writers or maintainers. Most contributors are involved through their company or an application. The main contributors are shown below with their profile pictures, names and GitHub user names. The people of the GitHub OpenTripPlanner organization are marked with a red square. The people shown at the bottom of the picture do not belong to a larger company, but all have made an app or website incorporating OTP.
 ![Conveyal, local authorities and others](images-team-opentripplanner/overview_stakeholders.png)
-_Figure 2: Overview of the main contributors, including their companies_
+_Overview of the main contributors, including their companies_
 
 #### Integrators: Andrew and Laurent
 Andrew Byrd (@abyrd) is the overall manager of OTP and acts like an integrator. He decides which new features should be added and how bugs should be solved properly in order to remain the ideas behind OTP. On GitHub he is responsible for nearly all pull request merges. His role as a manager can clearly be distinguished at issue [#2153](https://github.com/opentripplanner/OpenTripPlanner/issues/2153). He shows clear understanding of the ideas behind OTP and pushes solutions directly to the codebase. At the Mailing Lists, he does not answer questions on the normal usage of OTP, but he does read through the discussions and tries to manage the resources correctly by for example redirecting discussions towards a GitHub issue if it would better belong there ([for example at this discussion](https://groups.google.com/forum/#!topic/opentripplanner-dev/bCRtwdmUPoA)). He also posts announcements on the Dev mailing list regarding new or deleted functions, as can be seen [at this topic on Path Parsers](https://groups.google.com/forum/#!topic/opentripplanner-dev/a-bNRJpa1cA). If he fixes a bug himself, he doesn't use a pull request but directly pushes to the repository. This sometimes leads to discussions at issues where Andrew claims he fixed the issue, with an immediate response of some one else claiming it still does not work or a new bug appeared. Even compilation errors sneak through ([see here](https://github.com/opentripplanner/OpenTripPlanner/pull/2194))! It is remarkable that a manager of an open source project does not like to be controlled himself while requesting this from the other contributors.
@@ -110,7 +110,7 @@ Additionally, the Graph Builder can be invoked by OTP instance via Graph Visuali
 
 A visualized picture of the as-intended development view has been composed according to the prior description and depicted on the graph located below.
 ![As-intended development view](images-team-opentripplanner/DevelopmentView.png)
-_Figure 4: As-intended development view of OTP_
+_As-intended development view of OTP_
 
 #### Layering violations in OTP ####
 Although OTP seems to have a clear layering approach among the packages, where the instance invokes core function utilizing several APIs for that purpose, this matter is sometimes violated.  
@@ -120,7 +120,7 @@ The example of such violation can be observed while the OTP Instance directly ca
 Furthermore, it would seem logical in the structure if the Analyst also used APIs to communicate with the core. However, this is not the case here, since the Analyst always directly invokes the core. What seems to be an even larger violation, is that the Router API uses constructs defined in Analyst, for example a PointSet (a group of destinations). A neater solution would involve creating a service which defines such constructs, which is called by both the Analyst and the Router API.
 
 The identified violations are shown on a package dependency graph place below.
-![As-implemented development view](images-team-opentripplanner/DevelopmentView-violations.png) <br> *Example of Layering violations in OTP*
+![As-implemented development view](images-team-opentripplanner/DevelopmentView-violations.png) <br> _Example of Layering violations in OTP_
 
 ### Technical debt in OTP
 To identify if there is technical debt in the system, the OTP project is evaluated in terms of the following 7 points [[16](#points)]: slowing velocity, stressful releases, aging libraries, defects, low automated test coverage, poor score on code quality metrics, presence of code smells
@@ -192,7 +192,7 @@ Several relationships can be found between the features.
 - If **Wheelchair accessibility** is selected, non-wheelchair accessible **Mode** settings will not be used, for example cycling.
 - If the **Visualizer** is started, the options which are set in the JSON files will not be used. Part of the options can be selected in the visualizer itself by selecting checkboxes in the user interface, as can be seen below:
 ![Variability options at the Visualizer](images-team-opentripplanner/graphvisualizer-variability.png) <br>
-*Variability options at the Visualizer*
+_Variability options at the Visualizer_
 
 - If the **Visualizer** is started, any **Timeout** settings are neglected due to search animations
 - If **Scripting** is used, the run-time features should be specified in the script itself instead of using the JSON file. Furthermore, not all options are available, for example the set of **Preferred routes**, **Congestion** and **Reluctance**.
@@ -201,7 +201,7 @@ Several relationships can be found between the features.
 As it can be observed, the before mentioned list has been created and divided accordingly to the binding times of specific features. In this particular software, most of them can be selected or altered during run-time with the use of GUI or CLI commands. Those which cannot be configured that way are usually defined as starting parameters for each OTP instance. The analysis of source code has not revealed any compile-time bounds or features that could personalize each build.
 The graph located below depicts a simplified view on the structure of listed features along with their dependencies and logical constraints. The reason for this simplification lies within the complexity that is introduced with each presentations of detailed architectures. In order to make this graph feasible for further analysis, and understandable to each stakeholder, this level has been set to be optimal, meaning - without additional elements that has not been described in the prior parts.
 ![Feature Graph](images-team-opentripplanner/FeatureDepiction-v2.png) <br>
-*Feature model of OpenTripPlanner*
+_Feature model of OpenTripPlanner_
 
 #### Variability strategy
 As can be read above, OTP is not very variable. There are a lot of options which influence the routing mechanism, but it's hard to see those as different software versions, since none of them are configured at compile-time or can personalize a certain build. There are some different operational modes: normal, script and analyst. These do all provide a different subset of the features of OTP and can thus be seen as variants. But those different modes are never being shipped separately and a big part of the code base is being used by all modes.
@@ -216,10 +216,10 @@ The way variability is handled within the OTP project has not been changed so mu
 <!-- ANOTHERVIEW --------------------------------------------------------- -->
 ### Handling of itinerary requests <div id="view"/>
 
-Dealing with itinerary requests is the main functionality of OpenTripPlanner. To give more insight on the internal handling of these requests, a functional view was created for this purpose (see **picture XXX**).
+Dealing with itinerary requests is the main functionality of OpenTripPlanner. To give more insight on the internal handling of these requests, a functional view was created for this purpose.
 
 ![Functional View](images-team-opentripplanner/functionalview.png)
-**Picture XXX** - Functional View of OTP, showing how a request is handled
+_Functional View of OTP, showing how a request is handled_
 
 A user provides his requests by specifying the origin, destination and preferences at the webbrowser. This request is send via the RESTful webservice to the OTP instance. A routing request is handled by the Routing Core module. The core creates a separate Routing Context for each routing request. This context includes the user input and other parameters, as well as the graph and transit feeds. If requested, the real-time feeds for transit and historical data on traffic speeds is included in the Routing Context as well. The Context is then given to the PathFinder. The PathFinder is responsible for actually searching possible routes from origin to destination. This is done by applying the A star algorithm. Several heuristics are used in this algorithm to speed up, depending on the type of request. This leads to a ShortestPathTree with the discovered itineraries. From this list the itineraries are taken that actually arrive at the wanted destination, also called States. These are banned by the PathFinder from the considered paths for the next searches, to create more variety in the found routes. The PathFinder continues iterating until a  certain time limit is reached or the number of paths found is sufficient. Next, the found paths are returned to the user.  
 
@@ -231,7 +231,7 @@ The rapidly growing interest in digitalized solutions, including software and ha
 The translation process of the web interface was conducted in accordance to instructions included in an official guide written by OTP developers. The first step was connected with re-using a dedicated translation template with English phrases as a base for new localization files. This was done with the help of POEdit software, which is a good solution for the manipulation of gettext (i18n) content. Since the software uses JSON structures for its provision of support for various languages, the files were converted and saved in the desired format. The last step involved the adjustment of the representation of units, and date / time formats, that were the most suitable for the newly generated localization. The graphical representation of the following steps in this process is included below.
 
 ![Translation process](images-team-opentripplanner/translation_process.png)
-*Brief overview of the translation process*
+_Brief overview of the translation process_
 
 The OpenTripPlanner project still has a long way to go, in order to become fully internationalized software. Right now, thanks to the implementation of GNU Translation Project (gettext), the program is able to efficiently support the vast majority of today's languages. Unfortunately, those, which include horizontal or pictographic representation of letters, have still not qualified to join this group. The reason for that lies within the "fixed-designed" interface, that do scale up to delivered content. The changes in code are required, in order to make it happen. However, considering that OTP's nature belongs to the open source world and there are many participants willing to actively develop it, this case is more than possible to achieve, even in the near future.
 
