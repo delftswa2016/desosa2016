@@ -1,7 +1,7 @@
 <!-- CHAPTEROUTLINE-------------------------------------------------------------- -->
 # OpenTripPlanner: A multimodal tripplanner
-<center> ![Conveyal, local authorities and others](images-team-opentripplanner/logo.png) <br> <br>
-<b> <a href="https://github.com/mvandertuin">Marieke van der Tuin</a>, <a href="https://github.com/thomhubers">Thom Hubers</a>, <a href="https://github.com/ergone">Piotr Tekieli</a>, <a href="https://github.com/acroockewit">Aafke Croockewit</a> </b> </center>
+![Conveyal, local authorities and others](images-team-opentripplanner/logo.png) <br>
+<a href="https://github.com/mvandertuin">Marieke van der Tuin</a>, <a href="https://github.com/thomhubers">Thom Hubers </a>, <a href="https://github.com/ergone">Piotr Tekieli</a>, <a href="https://github.com/acroockewit">Aafke Croockewit</a>
 
 <!-- ABSTRACT-------------------------------------------------------------- -->
 ##Abstract
