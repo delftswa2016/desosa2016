@@ -1,6 +1,7 @@
 <!-- CHAPTEROUTLINE-------------------------------------------------------------- -->
 # OpenTripPlanner: A multimodal tripplanner
-Marieke van der Tuin, Thom Hubers, Piotr Tekieli, Aafke Croockewit
+<center> ![Conveyal, local authorities and others](images-team-opentripplanner/logo.png) <br> <br>
+<b> <a href="https://github.com/mvandertuin">Marieke van der Tuin</a>, <a href="https://github.com/thomhubers">Thom Hubers</a>, <a href="https://github.com/ergone">Piotr Tekieli</a>, <a href="https://github.com/acroockewit">Aafke Croockewit</a> </b> </center>
 
 <!-- ABSTRACT-------------------------------------------------------------- -->
 ##Abstract
@@ -229,7 +230,7 @@ The rapidly growing interest in digitalized solutions, including software and ha
 
 The translation process of the web interface was conducted in accordance to instructions included in an official guide written by OTP developers. The first step was connected with re-using a dedicated translation template with English phrases as a base for new localization files. This was done with the help of POEdit software, which is a good solution for the manipulation of gettext (i18n) content. Since the software uses JSON structures for its provision of support for various languages, the files were converted and saved in the desired format. The last step involved the adjustment of the representation of units, and date / time formats, that were the most suitable for the newly generated localization. The graphical representation of the following steps in this process is included below.
 
-![Translation process](images-team-opentripplanner/translation_process.png) 
+![Translation process](images-team-opentripplanner/translation_process.png)
 *Brief overview of the translation process*
 
 The OpenTripPlanner project still has a long way to go, in order to become fully internationalized software. Right now, thanks to the implementation of GNU Translation Project (gettext), the program is able to efficiently support the vast majority of today's languages. Unfortunately, those, which include horizontal or pictographic representation of letters, have still not qualified to join this group. The reason for that lies within the "fixed-designed" interface, that do scale up to delivered content. The changes in code are required, in order to make it happen. However, considering that OTP's nature belongs to the open source world and there are many participants willing to actively develop it, this case is more than possible to achieve, even in the near future.
