@@ -18,7 +18,7 @@
 * [Team 16](team/chapter.md)
 * [Team 17](team/chapter.md)
 * [Team 18](team/chapter.md)
-* [Team 19](team/chapter.md)
+* [Team 19](opentripplanner/chapter.md)
 * [Team 20](team/chapter.md)
 * [Team 21](team/chapter.md)
 * [Team 22](team/chapter.md)
@@ -27,4 +27,3 @@
 * [Team 25](team/chapter.md)
 * [Team 26](team/chapter.md)
 * [Team 27](team/chapter.md)
-
