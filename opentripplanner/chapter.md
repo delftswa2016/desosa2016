@@ -5,7 +5,7 @@
 
 <!-- ABSTRACT-------------------------------------------------------------- -->
 ##Abstract
-*In this chapter, a multi-modal and multi-agency journey planner is analysed: Opentripplanner (OTP). OTP is an open source platform, following a client-server model, providing serveral map-based web interfaces as well as a REST API for use by third-party applications. Users of OTP are most of the time developers of the project as well, since they use OTP to build applications and fix bugs theirselves. In collaboration with one of the stakeholders of OTP, Plannerstack, contributions have been made to the project, all to add value to the 1.0.0 stable release, were developers are currently working on.*
+*In this chapter, a multi-modal and multi-agency journey planner is analyzed: Opentripplanner (OTP). OTP is an open source platform, following a client-server model, providing several map-based web interfaces as well as a REST API for use by third-party applications. Users of OTP are most of the time developers of the project as well, since they use OTP to build applications and fix bugs themselves. In collaboration with one of the stakeholders of OTP, Plannerstack, contributions have been made to the project, all to add value to the 1.0.0 stable release, were developers are currently working on.*
 
 <!-- TABLEOFCONTENTS-------------------------------------------------------------- -->
 ## Table of Contents
@@ -18,7 +18,7 @@
    - [Plannerstack & Conveyal](#plannerstack)
 3. [Context View](#context)
 4. [Development View](#development)
-   - As-intented development view
+   - As-intended development view
    - Layering violations
    - Module dependencies
    - Technical debt
@@ -42,27 +42,27 @@ OpenTripPlanner (OTP) is an open-source software for multimodal trip planning an
 This chapter informs about the recent development of OTP. First, the stakeholders are examined, followed by an analysis of different views on the system. These views provide insight into the inner workings of OTP itself and its development process. The insights gained with this analysis are combined into recommendations, which can be found at the end of this chapter.
 
 #### History
-OpenTripPlanner was created in 2009 by OpenPlans. The main user of the project was the TriMet [[9](#ttp)] regional trip planner. TriMet[[10](#tpm)] is the transport authority of Portland, USA. At the end of 2012, Openplans decided to stop with the development coordination. However, in the beginning of 2013 members of OpenPlans founded Conveyal, an open source focused transportation consultancy. They continued to support the OTP development [[23](#otpwebsite)], [[24](#otpdoc)].
+OpenTripPlanner was created in 2009 by OpenPlans. The main user of the project was the TriMet [[9](#ttp)] regional trip planner. TriMet[[10](#tpm)] is the transport authority of Portland, USA. At the end of 2012, OpenPlans decided to stop with the development coordination. However, in the beginning of 2013 members of OpenPlans founded Conveyal, an open source focused transportation consultancy. They continued to support the OTP development [[23](#otpwebsite)], [[24](#otpdoc)].
 
 <!-- STAKEHOLDERS --------------------------------------------------------- -->
 ### Who is involved in OTP? <div id="stakeholders"/>
 The history of the OpenTripPlanner [[1](his)] has a clear impact on the stakeholders involved. The people involved mostly with the development of the code are employees of Conveyal [[21](#conveyal)]. Furthermore, a few local authorities that use OpenTripPlanner are actively involved in the project development. For example Ruter#, the travel agency for Southeastern Norway and HSL Finland use OpenTripPlanner in their planning tools. Not only local transport authoritie, but also some individuals are working with OpenTripPlanner. Most of them use OTP to built apps, such as AllyApp, a local transport planning application which can be used in multiple cities (mainly in Germany).
 
 #### Users
-There are two main types of people who use the system. There are the users who built an app or website using OTP (for example HSL Finland), and there are users that extend OTP into customer-based solutions (for example PlannerStack, who provided an OTP solution for the Dutch Connexxion bus company). The latter category can be seen as providers of OTP to others. Both groups can be further categorized into developers and benefitters. Developers contribute to the project by providing new features and bug fixes. Benefitters only make use of the system. The following graph shows the users and most important involved companies according to these two dimensions.
+There are two main types of people who use the system. There are the users who built an app or website using OTP (for example HSL Finland), and there are users that extend OTP into customer-based solutions (for example PlannerStack, who provided an OTP solution for the Dutch Connexxion bus company). The latter category can be seen as providers of OTP to others. Both groups can be further categorized into developers and benefiters. Developers contribute to the project by providing new features and bug fixes. Benefiters only make use of the system. The following graph shows the users and most important involved companies according to these two dimensions.
 
 At last the end-users have to be mentioned. The end-users will use the app, website or other solution build on top of OTP, e.g. to plan a trip. Because this group of users is not directly involved in OTP (they will never directly use OTP), they are out of scope for this chapter.
 
-![Benefitters vs Developers, Users vs Providers](images-team-opentripplanner/companies.png)
+![Benefiters vs Developers, Users vs Providers](images-team-opentripplanner/companies.png)
 _Figure 1: Categorization of the users_
 
 #### Contributors
-It's hard to make a distinction between different types of contributors. There are no explicit testers, documentators or maintainers. Most contributors are involved through their company or an application. The main contributors are shown below with their profile pictures, names and GitHub user names. The people of the GitHub OpenTripPlanner organization are marked with a red square. The people shown at the bottom of the picture do not belong to a larger company, but all have made an app or website incorportating OTP.
+It's hard to make a distinction between different types of contributors. There are no explicit testers, documentation writers or maintainers. Most contributors are involved through their company or an application. The main contributors are shown below with their profile pictures, names and GitHub user names. The people of the GitHub OpenTripPlanner organization are marked with a red square. The people shown at the bottom of the picture do not belong to a larger company, but all have made an app or website incorporating OTP.
 ![Conveyal, local authorities and others](images-team-opentripplanner/overview_stakeholders.png)
 _Figure 2: Overview of the main contributors, including their companies_
 
 #### Integrators: Andrew and Laurent
-Andrew Byrd (@abyrd) is the overall manager of OTP and acts like an integrator. He decides which new features should be added and how bugs should be solved properly in order to remain the ideas behind OTP. On GitHub he is responsible for nearly all pull request merges. His role as a manager can clearly be distinguished at issue [#2153](https://github.com/opentripplanner/OpenTripPlanner/issues/2153). He shows clear understanding of the ideas behind OTP and pushes solutions directly to the codebase. At the Mailing Lists, he does not answer questions on the normal usage of OTP, but he does read through the discussions and tries to manage the resources correctly by for example redirecting discussions towards a GitHub issue if it would better belong there ([for example at this discussion](https://groups.google.com/forum/#!topic/opentripplanner-dev/bCRtwdmUPoA)). He also posts announcements on the Dev mailing list regarding new or deleted functions, as can be seen [at this topic on Path Parsers](https://groups.google.com/forum/#!topic/opentripplanner-dev/a-bNRJpa1cA). If he fixes a bug himself, he doesn't use a pull request but directly pushes to the repository. This sometimes leads to discussions at issues where Andrew claims he fixed the issue, with an immediate response of some one else claiming it still does not work or a new bug appeared. Even compilation errors sneak through ([see here](https://github.com/opentripplanner/OpenTripPlanner/pull/2194))! It is remarkable that a manager of an open source project does not like to be controlled himselve while requesting this from the other contributors.
+Andrew Byrd (@abyrd) is the overall manager of OTP and acts like an integrator. He decides which new features should be added and how bugs should be solved properly in order to remain the ideas behind OTP. On GitHub he is responsible for nearly all pull request merges. His role as a manager can clearly be distinguished at issue [#2153](https://github.com/opentripplanner/OpenTripPlanner/issues/2153). He shows clear understanding of the ideas behind OTP and pushes solutions directly to the codebase. At the Mailing Lists, he does not answer questions on the normal usage of OTP, but he does read through the discussions and tries to manage the resources correctly by for example redirecting discussions towards a GitHub issue if it would better belong there ([for example at this discussion](https://groups.google.com/forum/#!topic/opentripplanner-dev/bCRtwdmUPoA)). He also posts announcements on the Dev mailing list regarding new or deleted functions, as can be seen [at this topic on Path Parsers](https://groups.google.com/forum/#!topic/opentripplanner-dev/a-bNRJpa1cA). If he fixes a bug himself, he doesn't use a pull request but directly pushes to the repository. This sometimes leads to discussions at issues where Andrew claims he fixed the issue, with an immediate response of some one else claiming it still does not work or a new bug appeared. Even compilation errors sneak through ([see here](https://github.com/opentripplanner/OpenTripPlanner/pull/2194))! It is remarkable that a manager of an open source project does not like to be controlled himself while requesting this from the other contributors.
 
 #### Plannerstack ####
 Plannerstack is one of the companies (actually a foundation) that is using OTP for it's projects. The developers of Plannerstack are improving OTP while using it. The foundation does also offer a hosted service in which developers can use the service without the need of a server.
@@ -141,7 +141,7 @@ On [Google Groups](https://groups.google.com/forum/#!searchin/opentripplanner-de
 
 OpenTripPlanner uses Maven, which is a combined build and dependency management system: it fetches the external libraries that OTP uses, runs the commands to compile the OTP source code, performs tests, and deploys the executable JAR-file into the repository.
 
-For example as a test framework [Junit](http://mvnrepository.com/artifact/junit/junit) version 4.8.1 is used. This version is from december 2009, which is also the same date when OTP was released. This means that multiple new versions has already been released since. This reveals the technical debt. Other examples are: slf4j version 1.7.6 (February 2014), logback-classic version 1.0.13 (February 2013) and flexjson version 2.0 (2010), while newest version was released in 2014. This means for OTP there is a possible improvement to be done in the sphere of maintaining these aging libraries.
+For example as a test framework [Junit](http://mvnrepository.com/artifact/junit/junit) version 4.8.1 is used. This version is from December 2009, which is also the same date when OTP was released. This means that multiple new versions has already been released since. This reveals the technical debt. Other examples are: slf4j version 1.7.6 (February 2014), logback-classic version 1.0.13 (February 2013) and flexjson version 2.0 (2010), while newest version was released in 2014. This means for OTP there is a possible improvement to be done in the sphere of maintaining these aging libraries.
 
 **Defects** <br/>
 > A high number of open or escaped defects is an indicator of technical debt.<br/>
@@ -164,7 +164,7 @@ The left side of the pyramid shows the size and complexity of the system, showin
 ![code quality](images-team-opentripplanner/codesmell-overviewpyramid.png)*Code quality of OTP* <br/>
 
 **Presence of code smells****
-With Infusion Metrics the code smell is analysed.
+With Infusion Metrics the code smell is analyzed.
 OTP has 133.099 lines of code. The system has 360 Design Flaws and the QDI is 36,9. ([The Quality Deficit Index](https://dzone.com/articles/jsf-component-libraries) is a positive, upwards unbound value, which is a measure of "badness" of the analyzed system's design quality respecting the overall size of the system.)
 ![code smells](images-team-opentripplanner/codesmells.png)
 
@@ -172,7 +172,7 @@ Concluded can be that OTP project has  technical debt (aging libraries, code qua
 
 <!-- VARIABILITY VIEW --------------------------------------------------------- -->
 ### Features of OTP <div id="variability"/>
-OpenTripPlanner has several different features, of which some are especially created for the developers (for example for debug purposes), some especially for application builders and transport authorities (for example setting the fares) and some whicih are built for the users (for example setting the maximum walk distance). These features can be configured using JSON files (JavaScript Object Notation).
+OpenTripPlanner has several different features, of which some are especially created for the developers (for example for debug purposes), some especially for application builders and transport authorities (for example setting the fares) and some which are built for the users (for example setting the maximum walk distance). These features can be configured using JSON files (JavaScript Object Notation).
 
 #### 1. System-wide features
 System-wide features affect the entire OpenTripPlanner instance. They are used to start OpenTripPlanner in a certain mode, for example Analyst or scripting. The system-wide features will mainly be used for development and debugging of OpenTripPlanner.
@@ -221,7 +221,7 @@ Dealing with itinerary requests is the main functionality of OpenTripPlanner. To
 ![Functional View](images-team-opentripplanner/functionalview.png)
 **Picture XXX** - Functional View of OTP, showing how a request is handled
 
-A user provides his requests by specifying the origin, destination and preferences at the webbrowser. This request is send via the RESTful webservice to the OTP instance. A routing request is handled by the Routing Core module. The core creates a seperate Routing Context for each routing request. This context includes the user input and other parameters, as well as the graph and transit feeds. If requested, the real-time feeds for transit and historical data on traffic speeds is included in the Routing Context as well. The Context is then given to the PathFinder. The PathFinder is responsible for actually searching possible routes from origin to destination. This is done by applying the A star algorithm. Several heuristics are used in this algorithm to speed up, depending on the type of request. This leads to a ShortestPathTree with the discovered itineraries. From this list the itineraries are taken that actually arrive at the wanted destination, also called States. These are banned by the PathFinder from the considered paths for the next searches, to create more variety in the found routes. The PathFinder continues iterating until a  certain timelimit is reached or the number of paths found is sufficient. Next, the found paths are returned to the user.  
+A user provides his requests by specifying the origin, destination and preferences at the webbrowser. This request is send via the RESTful webservice to the OTP instance. A routing request is handled by the Routing Core module. The core creates a separate Routing Context for each routing request. This context includes the user input and other parameters, as well as the graph and transit feeds. If requested, the real-time feeds for transit and historical data on traffic speeds is included in the Routing Context as well. The Context is then given to the PathFinder. The PathFinder is responsible for actually searching possible routes from origin to destination. This is done by applying the A star algorithm. Several heuristics are used in this algorithm to speed up, depending on the type of request. This leads to a ShortestPathTree with the discovered itineraries. From this list the itineraries are taken that actually arrive at the wanted destination, also called States. These are banned by the PathFinder from the considered paths for the next searches, to create more variety in the found routes. The PathFinder continues iterating until a  certain time limit is reached or the number of paths found is sufficient. Next, the found paths are returned to the user.  
 
 <!-- ANOTHERPERSPECTIVE ----------------------------------------------- -->
 ### OTP going international <div id="perspective"/>
@@ -238,7 +238,7 @@ The OpenTripPlanner project still has a long way to go, in order to become fully
 <!-- FUTUREOFOTP --------------------------------------------------------- -->
 ### Future releases of OTP <div id="future"/>
 #### 1.0.0
-This release version was originally planned for the end of 2015, but the authors did not accomplish to make this deadline. The development is slowed down because of a lack of attention of the main contributing companies. Several bugs still need te be fixed before this version can be released, but according to Plannerstack this release will be published soon. Andrew Byrd (main developer) is working hard on finishing the release, that’s why external contributions are merged very slow.
+This release version was originally planned for the end of 2015, but the authors did not accomplish to make this deadline. The development is slowed down because of a lack of attention of the main contributing companies. Several bugs still need to be fixed before this version can be released, but according to Plannerstack this release will be published soon. Andrew Byrd (main developer) is working hard on finishing the release, that’s why external contributions are merged very slow.
 
 #### 2.0.0 (R5)
 This release is mainly the cause of 1.0.0 being delayed. This release (nicknamed R5) incorporates a new routing engine (Bliksem). This engine is well optimized and written in C, but lacks features like real time data and traversal permissions. When this version is done, the source will be published. Bliksem, R5 and OTP share the same REST API for interoperability.  A lot of attention is paid to this release which is also being scheduled to be published soon. This version is being built by Conveyal.
