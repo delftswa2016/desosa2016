@@ -17,7 +17,7 @@
 * [Team 15](team/chapter.md)
 * [Team 16](team/chapter.md)
 * [Team 17](team/chapter.md)
-* [Team 18](team/chapter.md)
+* [Neo4j](neo4j/chapter.md)
 * [Team 19](team/chapter.md)
 * [Team 20](team/chapter.md)
 * [Team 21](team/chapter.md)
