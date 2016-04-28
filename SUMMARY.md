@@ -21,7 +21,7 @@
 * [Team 19](team/chapter.md)
 * [Team 20](team/chapter.md)
 * [Team 21](team/chapter.md)
-* [Team 22](team/chapter.md)
+* [Sonic Pi - The Live Coding Synth for Everyone](sonicpi/chapter.md)
 * [Team 23](team/chapter.md)
 * [Terasology](Terasology/Final_Chapter.md)
 * [Team 25](team/chapter.md)
