@@ -23,7 +23,7 @@
 * [Team 21](team/chapter.md)
 * [Team 22](team/chapter.md)
 * [Team 23](team/chapter.md)
-* [Team 24](team/chapter.md)
+* [Terasology](Terasology/Final_Chapter.md)
 * [Team 25](team/chapter.md)
 * [Team 26](team/chapter.md)
 * [Team 27](team/chapter.md)
