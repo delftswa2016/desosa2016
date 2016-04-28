@@ -3,7 +3,7 @@
 * [Team 1](team/chapter.md)
 * [Team 2](team/chapter.md)
 * [Team 3](team/chapter.md)
-* [Team 4](team/chapter.md)
+* [Bootstrap](bootstrap/chapter.md)
 * [Team 5](team/chapter.md)
 * [Team 6](team/chapter.md)
 * [Team 7](team/chapter.md)
