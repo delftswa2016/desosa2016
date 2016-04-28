@@ -25,6 +25,5 @@
 * [Team 23](team/chapter.md)
 * [Terasology](Terasology/Final_Chapter.md)
 * [Team 25](team/chapter.md)
-* [Team 26](team/chapter.md)
+* [Youtube-dl](youtube-dl/chapter.md)
 * [Team 27](team/chapter.md)
-
