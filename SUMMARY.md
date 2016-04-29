@@ -1,6 +1,6 @@
 # Summary
 
-* [Team 1](team/chapter.md)
+* [Atom](atom/chapter.md)
 * [Team 2](team/chapter.md)
 * [Team 3](team/chapter.md)
 * [Bootstrap](bootstrap/chapter.md)
