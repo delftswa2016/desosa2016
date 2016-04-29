@@ -15,7 +15,7 @@
 * [Team 13](team/chapter.md)
 * [Team 14](team/chapter.md)
 * [Team 15](team/chapter.md)
-* [Team 16](team/chapter.md)
+* [Mopidy](mopidy/chapter.md)
 * [Team 17](team/chapter.md)
 * [Team 18](team/chapter.md)
 * [Team 19](team/chapter.md)
