@@ -9,7 +9,7 @@
 * [D3.js](d3js/chapter.md)
 * [Ember.js](ember.js/chapter.md)
 * [Team 9](team/chapter.md)
-* [Team 10](team/chapter.md)
+* [Guava](guava/chapter.md)
 * [Habitica](habitica/chapter.md)
 * [Team 12](team/chapter.md)
 * [Team 13](team/chapter.md)
