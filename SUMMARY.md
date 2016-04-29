@@ -20,7 +20,7 @@
 * [Team 18](team/chapter.md)
 * [Team 19](team/chapter.md)
 * [Team 20](team/chapter.md)
-* [Team 21](team/chapter.md)
+* [Ruby on Rails](rails/chapter.md)
 * [Sonic Pi](sonicpi/chapter.md)
 * [TensorFlow](tensorflow/chapter.md)
 * [Terasology](Terasology/Final_Chapter.md)
