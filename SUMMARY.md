@@ -18,7 +18,7 @@
 * [Team 16](team/chapter.md)
 * [Team 17](team/chapter.md)
 * [Team 18](team/chapter.md)
-* [Team OpenTripPlanner](opentripplanner/chapter.md)
+* [OpenTripPlanner](opentripplanner/chapter.md)
 * [Team 20](team/chapter.md)
 * [Team 21](team/chapter.md)
 * [Team 22](team/chapter.md)
