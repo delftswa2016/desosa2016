@@ -6,7 +6,7 @@
 * [Bootstrap](bootstrap/chapter.md)
 * [Team 5](team/chapter.md)
 * [Team 6](team/chapter.md)
-* [Team 7](team/chapter.md)
+* [D3.js](d3js/chapter.md)
 * [Team 8](team/chapter.md)
 * [Team 9](team/chapter.md)
 * [Team 10](team/chapter.md)
