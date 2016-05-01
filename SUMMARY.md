@@ -18,7 +18,7 @@
 * [Mopidy](mopidy/chapter.md)
 * [Team 17](team/chapter.md)
 * [OpenCV](opencv/Chapter.md)
-* [Team 19](team/chapter.md)
+* [OpenTripPlanner](opentripplanner/chapter.md)
 * [Team 20](team/chapter.md)
 * [Ruby on Rails](rails/chapter.md)
 * [Sonic Pi](sonicpi/chapter.md)
