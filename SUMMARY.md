@@ -4,7 +4,7 @@
 * [Team 2](team/chapter.md)
 * [BigBlueButton](bigbluebutton/chapter.md)
 * [Bootstrap](bootstrap/chapter.md)
-* [Team 5](team/chapter.md)
+* [CKAN](ckan/chapter.md)
 * [CodeCombat](codecombat/chapter.md)
 * [D3.js](d3js/chapter.md)
 * [Ember.js](ember.js/chapter.md)
