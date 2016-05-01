@@ -12,7 +12,7 @@
 * [Guava](guava/chapter.md)
 * [Habitica](habitica/chapter.md)
 * [Team 12](team/chapter.md)
-* [Team 13](team/chapter.md)
+* [Karma](karma/chapter.md)
 * [Team 14](team/chapter.md)
 * [Team 15](team/chapter.md)
 * [Mopidy](mopidy/chapter.md)
