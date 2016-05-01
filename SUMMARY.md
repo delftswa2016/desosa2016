@@ -16,7 +16,7 @@
 * [Team 14](team/chapter.md)
 * [Team 15](team/chapter.md)
 * [Mopidy](mopidy/chapter.md)
-* [Team 17](team/chapter.md)
+* [Neo4j](neo4j/chapter.md)
 * [OpenCV](opencv/Chapter.md)
 * [OpenTripPlanner](opentripplanner/chapter.md)
 * [Team 20](team/chapter.md)
