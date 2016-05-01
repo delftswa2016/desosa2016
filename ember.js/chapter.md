@@ -23,7 +23,7 @@
     - [Modular Design: Ember’s MVC Design Pattern](#design)
     - [Module Organization: Dependencies and Interactions](#module-organization)
     - [Standardization of Design and Testing](#design-standard)
-    - [Codeline Organization](codeline-organization)
+    - [Codeline Organization](#codeline-organization)
 - [Features from different Perspectives](#features)
     - [Users: Data Model, Routing, Rendering Engine & Configuration of Application](#data-model)
     - [Developers & Users: Configuration of New Features](#configuration)
@@ -102,7 +102,7 @@ By developing a broader view, the frameworks relationships, dependencies, and in
 ![Ember-context-view-diagram](images-team-emberjs/context-view-diagram.png)  
     *Figure 4: Ember.js context view diagram*
 
-To maintain and help the large Ember community, a couple of third party platforms are used. For user support, Ember uses [StackOverflow](http://stackoverflow.com/questions/tagged/ember.js). Other channels for user support can be found in the Ember Community on Slack, the IRC channel on [Freenode IRC](https://webchat.freenode.net/) or within Google Groups. For Ember [learning resources]((http://emberwatch.com/)) (podcasts, videos, blog posts, books and so on) almost all Core Team Members have public channels on either YouTube or Vimeo. Most of these platforms are also able to give feedback for future development. Finally, for developers, Ember’s source code is, of course, available on GitHub.
+To maintain and help the large Ember community, a couple of third party platforms are used. For user support, Ember uses [StackOverflow](http://stackoverflow.com/questions/tagged/ember.js). Other channels for user support can be found in the Ember Community on Slack, the IRC channel on [Freenode IRC](https://webchat.freenode.net/) or within Google Groups. For Ember [learning resources](http://emberwatch.com/) (podcasts, videos, blog posts, books and so on) almost all Core Team Members have public channels on either YouTube or Vimeo. Most of these platforms are also able to give feedback for future development. Finally, for developers, Ember’s source code is, of course, available on GitHub.
 
 Lastly, the figure shows that Ember applications can be built on a cross-platform server running Node.js, such as Windows, OSX, Linux, and FreeBSD. The framework can be rendered on multiple web browsers like Google Chrome, Firefox, Opera, and Safari. Also, Ember uses an efficient deployment technique using Redis and Amazon S3, which will be discussed in the [later section](#change-practice).
 
@@ -137,7 +137,7 @@ As a complex system, Ember.js source code can be classified into several modules
 ![Ember.js Module List](images-team-emberjs/ember-module-list.png)  
     *Figure 6: Ember.js modules*
 
-It is difficult to group and partition modules in Ember.js into different layers as they form a complex dependency pattern (see Figure 7; this figure is constructed by visualizing Ember.js’s source code through [GraphViz](www.graphviz.org)). Some of these modules interact with third party modules as well, making the interaction pattern even more complex. The relatively clear defined modules prevent develop functions multiple times and make it easy to localize bugs and performance issues, though. However, the dependencies between the different modules make it hard to change specific components, because it can be hard to predict its consequences for other modules. Subsequently, this has a negative impact on both scalability and maintainability of the Ember.js framework. This is in particular true for *ember-metal*, *ember-runtime* and *ember-views*.
+It is difficult to group and partition modules in Ember.js into different layers as they form a complex dependency pattern (see Figure 7; this figure is constructed by visualizing Ember.js’s source code through [GraphViz](http://www.graphviz.org)). Some of these modules interact with third party modules as well, making the interaction pattern even more complex. The relatively clear defined modules prevent develop functions multiple times and make it easy to localize bugs and performance issues, though. However, the dependencies between the different modules make it hard to change specific components, because it can be hard to predict its consequences for other modules. Subsequently, this has a negative impact on both scalability and maintainability of the Ember.js framework. This is in particular true for *ember-metal*, *ember-runtime* and *ember-views*.
 
 ![Ember.js Module Organization](images-team-emberjs/ember-modules.png)  
     *Figure 7: Ember.js modules and their dependencies*
