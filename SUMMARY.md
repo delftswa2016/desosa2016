@@ -24,6 +24,6 @@
 * [Sonic Pi](sonicpi/chapter.md)
 * [TensorFlow](tensorflow/chapter.md)
 * [Terasology](Terasology/Final_Chapter.md)
-* [Team 25](team/chapter.md)
+* [Wildfly](wildfly/Chapter.md)
 * [Youtube-dl](youtube-dl/chapter.md)
 * [Team 27](team/chapter.md)
