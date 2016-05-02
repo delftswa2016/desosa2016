@@ -2,7 +2,7 @@
 
 [![Neo4j logo](images/neo4j-logo.png)](http://neo4j.com)
 
-**[Kangliang Chen](https://github.com/kangliangc), [Manoj Krishnaraj](https://github.com/manojklm), and [Tom Peeters](https://github.com/tompeeters368)**
+**[Kangliang Chen](https://github.com/kangliangc), [Manoj Krishnaraj](https://github.com/manojpkr), and [Tom Peeters](https://github.com/tompeeters368)**
 
 *[Delft University of Technology](http://tudelft.nl)*
 
