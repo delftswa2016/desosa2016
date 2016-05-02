@@ -417,8 +417,8 @@ There are also gems that are only used for testing.
 Among all the gems listed below, we can see that there are a few recurring categories: sound-related gems and gems related to parsing and compilation. 
 These two categories are very important to the Sonic Pi system and it is not surprising to find them in the listed gems as well.
 
-- [ActiveSupport](api.rubyonrails.org) - a set of utility classes from the Rails framework
-- [alsa-rawmidi](github.com/arirusso/alsa-rawmidi) - access the alsa raw midi API via Ruby
+- [ActiveSupport](http://api.rubyonrails.org) - a set of utility classes from the Rails framework
+- [alsa-rawmidi](https://github.com/arirusso/alsa-rawmidi) - access the alsa raw midi API via Ruby
 - [ast-2.0.0](http://whitequark.github.com/ast/frames.html) - library for working with Abstract Syntax Trees
 - [atomic](http://github.com/headius/ruby-atomic) - provides a class for providing atomic updates
 - [benchmark-ips](https://github.com/evanphx/benchmark-ips) - can be used for benchmarking

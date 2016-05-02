@@ -200,7 +200,7 @@ Database systems are a thing which every modern company requires. This makes it 
 ### Third-Party Software Constraints 
 The installation of Neo4j requires no third party software other than Java runtime 7 or 8 (preferred). However, there are several third-party programs which Neo4j natively supports and that a user may want to install. Below, these programs are highlighted.
 
-- It is recommended to install software that can visualize the graph database. Neo4j recommends the use of commercial product [Linkurious](linkurio.us). However, open-source software [Gephi](https://gephi.org/) is frequently used for this as well.
+- It is recommended to install software that can visualize the graph database. Neo4j recommends the use of commercial product [Linkurious](http://linkurio.us). However, open-source software [Gephi](https://gephi.org/) is frequently used for this as well.
 - Though it is possible to interface to a Neo4j server using the Neo4j Shell, the recommended method is to use an internet browser such as [Google Chrome](https://www.google.com/chrome/), which allows it to use the D3.js library to visualize data to the user.
 - Neo4j supports the use of [Docker](https://www.docker.com), a program that can wrap another piece of software in a complete filesystem. Using Docker it becomes simpler to get Neo4j servers running on multiple systems, as it can store the image of the software and install it on another computer with no further hassle. The software on both systems will be identical.
 

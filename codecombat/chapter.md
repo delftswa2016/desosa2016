@@ -578,7 +578,7 @@ This way it is possible to code coding while working on a real project and this 
 
 ### How to start contributing
 Making contributions can be done in [several](http://codecombat.com/contribute) ways, but is mostly done by forking the Github repository and work on issues. 
-Another way is by using one of the [editors](codecombat.com/editor) that are integrated on the CodeCombat web page. 
+Another way is by using one of the [editors](http://codecombat.com/editor) that are integrated on the CodeCombat web page. 
 For more information about the editors it’s best to look at the [wiki page](https://github.com/codecombat/codecombat/wiki/) of CodeCombat.
 
 Before any contribution can be made the user has to sign the [Contributor License Agreement](https://codecombat.com/cla). 
