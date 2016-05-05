@@ -11,7 +11,7 @@
 ## Table of Contents
 1. [Introduction](#introduction)
    - [History](#history)
-2. [Who is involved in OTP?](#stakeholder)
+2. [Who is involved in OTP?](#stakeholders)
    - [Users](#users)
    - [Contributors](#contributors)
    - [Integrators](#integrators)
@@ -66,8 +66,6 @@ Andrew Byrd (@abyrd) is the overall manager of OTP and acts like an integrator. 
 #### Plannerstack ####
 Plannerstack is one of the companies (actually a foundation) that is using OTP for it's projects. The developers of Plannerstack are improving OTP while using it. The foundation does also offer a hosted service in which developers can use the service without the need of a server.
 
-In an [interview](Appendix.Plannerstack.md) with J. Hartong (co-founder) and J. Harting (product owner) of Plannerstack, discussed were the use of the web interface (mainly used for debugging purposes by developers, and not for endusers.) and [future releases(#future)].
-
 #### Interests of contributors
 As shown, the main developers are working for their own companies or applications. This also reflects the way developers maintain the code and add new features. Bugs are encountered by users of the system, and most of the time immediately fixed by themselves. For example, @sdjacobs reports an issue about a NullPointerException ([#2210](https://github.com/opentripplanner/OpenTripPlanner/issues/2210)) and gives the fix himself immediately afterwards in a pull request ([#2211](https://github.com/opentripplanner/OpenTripPlanner/pull/2211)).
 
@@ -110,7 +108,7 @@ A visualization of the as-intended development view has been composed according 
 ![As-intended development view](images-team-opentripplanner/DevelopmentView.png) <br/>
 _Figure 4: As-intended development view of OTP_
 
-#### Layering violations in OTP #### <div id="layering"/>
+#### Layering violations in OTP <div id="layering"/>
 Although OTP seems to have a clear layering approach among the packages, where the instance invokes core function utilizing several APIs for that purpose, this matter is sometimes violated.  
 
 The example of such violation can be observed while the OTP Instance directly calls the core to create a new RoutingRequest parameter configuration, which sets available modes and speed limits. We suspect that those are probably set before the actual execution of call, since different modes require different start-ups of the core itself. All other parameters are correctly set using the Routing API.
@@ -247,7 +245,7 @@ This release version was originally planned for the end of 2015, but the authors
 This release is mainly the cause of 1.0.0 being delayed. This release (nicknamed R5) incorporates a new routing engine (Bliksem). This engine is well optimized and written in C, but lacks features like real time data and traversal permissions. When this version is done, the source will be published. Bliksem, R5 and OTP share the same REST API for interoperability.  A lot of attention is paid to this release which is also being scheduled to be published soon. This version is being built by Conveyal.
 
 <!-- CONCLUSION --------------------------------------- -->
-### Conclusion <div id="conslusion"/>
+### Conclusion <div id="conclusion"/>
 OTP is an interesting project because it’s both commercial and open source. This means that there is a community that is involved in maintaining and improving the code, but this community is small at the same time. The authors are not very clear about their intentions regarding the future of the software. From a technical point of view, the project works quite well. Although the routing engine has some bugs, none of these are show stoppers and the project is used in some important trip planners.
 
 If the project owners want OpenTripPlanner to become a lively open source project, it is recommended that they are more open about their goals for the future and involve the community in discussions about release schedules and features. Direct undiscussed commits to the master branch are not recommended. But it’s hard to keep a community involved and deliver software to clients at the same time.
