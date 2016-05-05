@@ -2,22 +2,33 @@
 
 
 **[Arie van Deursen], [Maurício Aniche] and [Joop Aué].**<br/>
-*Delft University of Technology, The Netherlands, May 1, 2016*
+*Delft University of Technology, The Netherlands, May 3, 2016*
 
-[arie van deursen]: http://avandeursen.com
+[arie van deursen]: https://avandeursen.com
 [maurício aniche]: https://github.com/mauricioaniche
 [joop aué]: https://github.com/joopaue
 
+We are proud to present
+_Delft Students on Software Architecture_, a collection of 21 architectural descriptions of open source software systems written by students from Delft University of Technology during a [master-level course][in4315] taking place in the spring of 2016.
 
-_Delft Students on Software Architecture_ is a collection of architectural descriptions of open source software systems written by students from Delft University of Technology during a [master-level course][in4315] taking place in the spring of 2016.
+[in4315]: http://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=35212
 
-[in4315]: http://www.studiegids.tudelft.nl/a101_displayCourse.do?course_id=31246
+In this course, teams of 3-4 students could adopt a project of choice on GitHub. The projects selected had to be sufficiently complex and actively maintained (one or more pull requests merged per day). The systems are from a wide range of domains, including web development ([Ember], [D3], [Ruby on Rails][rails]), machine learning ([TensorFlow]), music ([SonicPi]), and gaming ([Terasology]).
 
-At the start of the course, teams of 3-4 students could adopt a project of choice on GitHub. The projects selected had to be sufficiently complex and actively maintained (one or more pull requests merged per day).
+[ember]: http://emberjs.com/
+[d3]: https://d3js.org/
+[rails]: http://rubyonrails.org/
+[tensorflow]: https://www.tensorflow.org/
+[sonicpi]: http://sonic-pi.net/
+[terasology]: http://terasology.org/
 
-During a 10 week period, the students spent one third of their time on this course,and engaged with these systems in order to understand and describe their software architecture.
+During a 10 week period, the students spent one third of their time on this course, and engaged with these systems in order to understand and describe their software architecture.
 
 Inspired by Brown and Wilsons' [Architecture of Open Source Applications][aosa], we decided to organize each description as a chapter, resulting in the present online book.
+
+This book is the second in the DESOSA series: The first one resulted from the 2015 edition of the course, and contained architectural descriptions of ten (different) open source systems.
+
+[desosa2015]: https://delftswa.github.io/
 
 ## Recurring Themes
 
@@ -31,15 +42,24 @@ The first theme is outward looking, focusing on the use of the system. Thus, man
 [context]: http://www.viewpoints-and-perspectives.info/home/viewpoints/context/
 [stakeholder analysis]: http://www.mindtools.com/pages/article/newPPM_07.htm
 
-A second theme involves the [development viewpoint][development], covering modules, layers, components, and their inter-dependencies. Furthermore, it addresses integration and testing processes used for the system under analysis.
+A second theme involves the [development viewpoint][development], covering modules, layers, components, and their inter-dependencies. Furthermore, it addresses integration and testing processes used for the system under analysis, and often includes an assessment of the presence of technical debt.
 
 [development]: http://www.viewpoints-and-perspectives.info/home/viewpoints/
 
-A third recurring theme is _variability management_. Many of today's software systems are highly configurable. In such systems, different features can be enabled or disabled, at compile time or at run time. Using techniques from the field of [product line engineering][fospl], several of the chapters provide feature-based variability models of the systems under study.
+A third recurring theme is _variability management_. Many of today's software systems are highly configurable. In such systems, different features can be enabled or disabled, at compile time (flags) or at run time (toggles). Using techniques from the field of [product line engineering][fospl], several of the chapters provide feature-based variability models of the systems under study.
 
 ## First-Hand Experience
 
-Last but not least, the chapters are also based on the student's experience in actually contributing to the systems described. As part of the course over 75 pull requests to the projects under study were made, including refactorings, bug fixes, and documentation.
+Last but not least, the chapters are also based on the student's experience in actually contributing to the systems described. As part of the course over 75 pull requests to the projects under study were made, including refactorings ([Ember 13088], [Rails 24198]), bug fixes ([Terasology 2235]), new features ([Karma 1983]), test cases ([Sonic-Pi 1054]), translations ([OpenTripPlanner 2232]), and documentation ([OpenCV 4375]).
+Many projects had issues explicitly marked at "good for new contributors", making it easier for students to find a good starting point.
+
+[Karma 1983]: https://github.com/karma-runner/karma/pull/1983
+[Ember 13088]: https://github.com/emberjs/ember.js/issues/13088
+[Terasology 2235]: https://github.com/MovingBlocks/Terasology/pull/2235
+[Rails 24198]: https://github.com/rails/rails/pull/24198
+[Sonic-Pi 1054]: https://github.com/samaaron/sonic-pi/pull/1054
+[OpenCV 4375]: https://github.com/Itseez/opencv/issues/4375
+[OpenTripPlanner 2232]: https://github.com/opentripplanner/OpenTripPlanner/pull/2232
 
 Through these contributions the students often interacted with lead developers and architects of the systems under study, gaining first-hand experience with the architectural trade-offs made in these systems.
 
@@ -65,6 +85,10 @@ We would like to thank:
 * [Valentine Mairet] who created the front cover of this book.
 * Michael de Jong and Alex Nederlof who were instrumental in the earlier editions of this course.
 * All open source developers who helpfully responded to the students' questions and contributions.
+* The excellent [gitbook toolset] and [gitbook hosting] service making it easy to publish a collaborative book like this.
+
+[gitbook toolset]: https://github.com/GitbookIO/gitbook-cli
+[gitbook hosting]: https://www.gitbook.com/
 
 [Valentine Mairet]: https://github.com/valmai
 
@@ -94,4 +118,4 @@ Cover image: EWI Faculty, Delft, [TU News](http://tunews.weblog.tudelft.nl/2014/
 [![Creative Commons](img/cc-by.png)][cc-by]
 
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
-[desosa]: http://delftswa.github.io/
+[desosa]: https://www.gitbook.com/book/delftswa/desosa2016/details
