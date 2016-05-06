@@ -24,16 +24,19 @@ We analyzed the open source modules project of WildFly. Based on the online avai
 |[11](#ref)|Reference| 
 
 
+# Context
 <div id="con"></div>
-#Context
+
 WildFly is an open source application server in Java [[2](#2)] . Its copyright is owned by Red Hat Inc. This company has a pattern of purchasing projects, releasing as open source one of the system`s functionality and then charging clients for support and access to the full feature version.
 
 RedHat Inc has the infrastructure to turn rather small scale popular projects into a fully functional product. As stated by them: “We help more than 90% of Fortune 500 companies solve business challenges, align their IT and business strategies, and prepare for the future of technology”. As much as possible RedHat Inc tries to build up their new projects on their other owned projects. This is feasible since they are “the world`s leading provider of open source solutions”[[1](#1)].  
 
 
 In 2006 RedHat Inc bought JBoss, and owned the copyright for the JBoss Middleware, a portfolio of enterprise-class application and integration middleware software products. [[5](#5)]. One of these is The Enterprise Application Platform a single platform to quickly develop and deploy applications [[4](#4)]. The application server within the JBoss Enterprise is called WildFly and released as open source.
+
+# Stakeholders
 <div id="sta"></div>
-#Stakeholders
+
 RedHat Inc has full time employed developers that work on extending their project. However, since they are open source, some developers come from the open source community. 
 We refer to the people that voluntarily contribute to the WildFly project by submitting pull requests or providing user support by answering related questions on forums or other platforms (YouTube videos, blog posts) as open source developers. We also consider the users of WildFly, and not the entire JBoss platform to be open source users. Therefore we refer to the open source community (OSCommunity) as being formed of these two groups, the open source developers and the open source users. We acknowledge the different roles each stakeholder group has. However our intention in the merging of some groups is to show that the same group of people has multiple responsibilities. We provide names of group representatives and acknowledge the contribution of the OSCommunity in the corresponding stakeholder groups.
 
@@ -66,8 +69,9 @@ Beside the RedHat products WildFly also benefits from[[17](#17)]:
 
 ![Tester and User diagram](resources/TestvsUser2.jpg)
 
-<div id="pro"></div>
 #Proposed Stakeholders
+<div id="pro"></div>
+
 Analyzing the environment of WildFly we feel that in order to have a comprehensive stakeholder analysis there is a need for the following categories:
 
 **Followers:** WildFly uses social media. These followers are exclusively interested in WildFly, 3960 twitter followers and 1352 members of the Google+ community. RedHat Inc has a total of 8300 employees [[10](#10)]. As shown in the Power/Interest Grid for Stakeholder Prioritization this group has no power and low interest. However we consider that this group should not be monitored with minimum effort. This group is composed of employees of JBoss, people from the OSCommunity but also other people that are somehow interested in WildFly, they might not even be users (this group is represented in the Context View as a question mark). But they are potential users. These people are most likely to use WildFly. More importantly this group has the potential of becoming future JBoss employees. From the company`s perspective, this group is the first place to look for new talent because they build up an interest in the product on their own. 
@@ -89,8 +93,9 @@ All these are summarized within the following context view:
 
 
 
+# Git Repository Analysis
 <div id="git"></div>
-#Git Repository Analysis
+
 Description  | Result 
 ---- |  ----
 Open pull requests | 85
@@ -106,8 +111,8 @@ Based on our personal experience the process of contributing is very thorough. T
 
 From the analysis we conducted on both pull requests and issues, we found out that the Stakeholders which are involved are the Developers. The Developer class, could be further divided in leading developer(for each component of the system), common developer and Open source community. Each one in this category, has different abilities. The leading developer is responsible to review the code of pull requests and to decide which pull request is going to be merged or not. They make merge decisions based on the quality of code, the style and if it fits the project's roadmap. If a pull request is not merged the leading developers usually send a brief explanation or provide a log file. The common contributors(of the system) are responsible to resolve different issues (e.g bugs, feature upgrades, feature requests) and the open source community developers can assist to resolve open issues by submitting pull requests. 
 
+# Technical  Environment
 <div id="tec"> </div>
-#Technical  Environment
 
 WildFly is a server application that provides easy communication between the user and its server. It is one of the many features of the JBoss Application Enterprise. WildFly provides remote management  for one or more servers and runs on a local host server as well. This includes domain mode, where a domain of servers on different hosts can be managed by a central domain controller.
 
@@ -115,8 +120,8 @@ The system is organized in modules. The user can activate only the features that
 
 ![WildFly Dependencies](resources/dependency.jpg)
 
+# System Quality
 <div id="sys"> </div>
-#System Quality
 
 We looked into the quality of the project using iPlasma [[20](#20)] and inCode [[21](#21)]. The project has over 700 000 JavaLOC. Overall the class hierarchies have an average height and the inheritance trees are narrow. The classes are rather small and organized in fine-grained packages. These are all signs of a good system since the JBoss development team wants a modular system. The methods have average length and have simple logic, with few conditional branches. They also call several methods from few other classes. Making this a good environment for new open source developers. The overview pyramid "is an integrated, metrics-based means to both describe and characterize the overall structure of an object-oriented system, by quantifying the aspects of complexity, coupling and usage of inheritance"[[28](#28)]. The overview pyramid in itself shows that the JBoss developers take care of their technical debt.
 
@@ -127,8 +132,8 @@ The  JBoss developers opted for test driven development [[23](#23)]. They have a
 
 During our analysis we found potential candidates for refactoring. For our first PR [[25](#25)] we resolved their worst case of duplicated code. A 65 line method in 6 different test cases. We have created this simple issue ourselves [[26](#26)] for our initial contact. A more detailed description of this process can be found in the contributions file. In the following weeks we plan to tackle some of their God Classes. 
 
+# System Architecture
 <div id="sysa"> </div>
-#System Architecture
 
 From the beginning (JBoss) had a new approach to the architecture, a "modular class loading and a dependency injection framework allowing the services providing the application server functionality to be installed in parallel", as described by Kabir Khan, five year old software engineer on this project [[19](#19)]. Throughout the version releases, the modules and their interaction have changed in order to improve the system. 
 
@@ -183,12 +188,13 @@ The main user enable functionalities are:
 Even though the modules should be independent of each other, we highlight their inter dependencies in the following zoomed in diagram:
 
 ![Modules & Utility](resources/modules_utility.jpg)
+
+# Transaction Feature System Analysis
 <div id="tran"></div>
-#Transaction Feature System Analysis
 
-We focus on the Transaction user customization, specific to the WildFly project in discussion. This is a maven project in itself, part of the utility layer presented in the  architecture overview. The transaction has five sections with a total of 23 flexibility points described as followed.
+We focus on the Transaction user customization, specific to the WildFly project in discussion. This is a maven project in itself, part of the utility layer presented in the  architecture overview. The transaction has five sections with a total of 23 flexibility points described as follows.
 
-![Transactions' feature](resources/transactions1.PNG)
+![Transactions feature](resources/transactions1.PNG)
 
 
 
@@ -335,8 +341,9 @@ The following figures illustrate a few examples of the relationship between the 
 An overview of the feature binding time and class shows that only the *Default timeout* feature, which defines the timeout of the server requires reloading the server (i.e. restart). The rest of the features can be modified at Runtime. 
 
 ![Binding time per class](resources/bindingTime.png)
-<div id="fur"></div>
+
 #Further Reading
+<div id="fur"></div>
 
 1. [Install/Upgrade/Debugging Steps](https://github.com/delftswa2016/team-wildfly/blob/master/D6/Tutorial_1.md)
 2. [Demo: Mail configuration](https://github.com/delftswa2016/team-wildfly/blob/master/D6/Tutorial_2.md)
