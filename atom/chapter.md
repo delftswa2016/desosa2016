@@ -14,7 +14,7 @@ Lastly, in the functional view, all the elements delivering the functionalities 
 - [Introduction](#introduction)
 - [Stakeholders](#stakeholders)
 - [Context](#context)
-- [Developer View](#developer-view)
+- [Development View](#development-view)
 - [Variability](#variability)
 - [Functional View](#functional-view)
 - [Conclusion](#conclusion)
