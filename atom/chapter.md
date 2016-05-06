@@ -215,7 +215,7 @@ In this section a quantitative and a qualitative approach will be taken to exami
 
 ##### Quantitative approach
 Atom's [contribution guide](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages) suggests adding emoji to a commit message in order to make it clearer what a certain commit is supposed to do, opposed to simply adding more features.
-Examples include :art: for improving the structure of the code, :memo: for adding documentation and :arrow_up: for upgrading dependencies.
+Examples include ![](images/emoji/art.png) for improving the structure of the code, ![](images/emoji/memo.png) for adding documentation and ![](images/emoji/arrow_up.png) for upgrading dependencies.
 
 For this quantitative approach, all commit messages from commits made between 1 February 2015 and 1 March 2016 will be examined.
 This point has been chosen as such to give a large sample of commits in which the emoji guide [did not change](https://github.com/atom/atom/commits/master/CONTRIBUTING.md).
@@ -224,14 +224,14 @@ The following table lists some of those.
 
 | Emoji                 | #    | Usage                                      |
 |-----------------------|------|--------------------------------------------|
-| :art: (+ :lipstick:)  | 200  | improving the format/structure of the code |
-| :racehorse:           | 62   | improving performance                      |
-| :memo:                | 150  | writing docs                               |
-| :fire:                | 131  | removing code or files                     |
-| :green_heart:         | 60   | fixing the CI build                        |
-| :arrow_up:            | 1409 | upgrading dependencies                     |
+| ![](images/emoji/art.png) (+ ![](images/emoji/lipstick.png))  | 200  | improving the format/structure of the code |
+| ![](images/emoji/racehorse.png)           | 62   | improving performance                      |
+| ![](images/emoji/memo.png)                | 150  | writing docs                               |
+| ![](images/emoji/fire.png)                | 131  | removing code or files                     |
+| ![](images/emoji/green_heart.png)         | 60   | fixing the CI build                        |
+| ![](images/emoji/arrow_up.png)            | 1409 | upgrading dependencies                     |
 
-The most notable emoji is :arrow_up:, being used a total of 1409 times.
+The most notable emoji is ![](images/emoji/arrow_up.png), being used a total of 1409 times.
 When any of the Atom packages Atom depends on is updated, the maintainers make sure to immediately update the package in the core, to avoid technical debt caused by outdated dependencies.
 Additionally, they use seperate tooling ([David](https://david-dm.org/atom/atom)) to keep an eye on all external dependencies.
 
