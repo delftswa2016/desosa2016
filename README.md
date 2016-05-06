@@ -51,7 +51,7 @@ A third recurring theme is _variability management_. Many of today's software sy
 ## First-Hand Experience
 
 Last but not least, the chapters are also based on the student's experience in actually contributing to the systems described. As part of the course over 75 pull requests to the projects under study were made, including refactorings ([Ember 13088], [Rails 24198]), bug fixes ([Terasology 2235]), new features ([Karma 1983]), test cases ([Sonic-Pi 1054]), translations ([OpenTripPlanner 2232]), and documentation ([OpenCV 4375]).
-Many projects had issues explicitly marked at "good for new contributors", making it easier for students to find a good starting point.
+Many projects had issues explicitly marked as "good for new contributors", making it easier for students to find a good starting point.
 
 [Karma 1983]: https://github.com/karma-runner/karma/pull/1983
 [Ember 13088]: https://github.com/emberjs/ember.js/issues/13088
