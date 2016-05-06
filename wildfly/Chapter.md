@@ -183,7 +183,7 @@ The main user enable functionalities are:
 Even though the modules should be independent of each other, we highlight their inter dependencies in the following zoomed in diagram:
 
 ![Modules & Utility](resources/modules_utility.jpg)
-<div id="tran" </div>
+<div id="tran"></div>
 #Transaction Feature System Analysis
 
 We focus on the Transaction user customization, specific to the WildFly project in discussion. This is a maven project in itself, part of the utility layer presented in the  architecture overview. The transaction has five sections with a total of 23 flexibility points described as followed.
