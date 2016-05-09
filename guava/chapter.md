@@ -26,8 +26,6 @@ Guava is a Collections and Utility library, focusing on complementing the Java S
 	* [Usage Statistics and Phenomenon](#usage-statistics-phenomenon)
 * [Conclusion](#conclusion)
 * [References](#ref)
-* [Appendix: How to Contribute](./appendix-how_to_contribute.md)
-* [Appendix: Our Contribution](./appendix-our_contribution.md)
 
 <div id="introduction"/>
 ## Introduction
