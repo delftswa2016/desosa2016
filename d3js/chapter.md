@@ -1,4 +1,4 @@
-# ![d3js](images_d3js/d3.png) D3.js - Date-Driven Documents
+# ![d3js](images_d3js/d3.png) D3.js - Data-Driven Documents
 _Authors: M. Dunnewind, P. Gupta, S. van Schooten and P. van der Veeken_
 
 ## Abstract
