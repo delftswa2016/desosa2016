@@ -2,7 +2,7 @@
 
 
 **[Arie van Deursen], [Maurício Aniche] and [Joop Aué].**<br/>
-*Delft University of Technology, The Netherlands, May 3, 2016*
+*Delft University of Technology, The Netherlands, May 11, 2016, Version 1.0*
 
 [arie van deursen]: https://avandeursen.com
 [maurício aniche]: https://github.com/mauricioaniche
@@ -26,7 +26,7 @@ During a 10 week period, the students spent one third of their time on this cour
 
 Inspired by Brown and Wilsons' [Architecture of Open Source Applications][aosa], we decided to organize each description as a chapter, resulting in the present online book.
 
-This book is the second in the DESOSA series: The first one resulted from the 2015 edition of the course, and contained architectural descriptions of ten (different) open source systems.
+This book is the second in volume the DESOSA series: The [first DESOSA book][desosa2015] resulted from the 2015 edition of the course, and contained architectural descriptions of ten (different) open source systems.
 
 [desosa2015]: https://delftswa.github.io/
 
@@ -99,6 +99,7 @@ We would like to thank:
 3. Sven Apel, Don Batory, Christian Kästner, Gunter Saake. [Feature-Oriented Software Product Lines: Concepts and Implementation][fospl]. Springer-Verlag, 2013.
 4. Eric Bouwers. [Metric-based Evaluation of Implemented Software Architectures][bouwers]. PhD Thesis, Delft University of Technology, 2013.
 5. Amy Brown and Greg Wilson (editors). [The Architecture of Open Source Applications][aosa]. Volumes 1-2, 2012.
+6. Arie van Deursen and Rogier Slag (editors). Delft Students on Software Architecture: DESOSA 2015. [delftswa.github.io][desosa2015], 2015.
 
 [teaching-swa]: http://avandeursen.com/2013/12/30/teaching-software-architecture-with-github/
 [rw]: http://www.viewpoints-and-perspectives.info/
@@ -112,7 +113,10 @@ We would like to thank:
 The copyright of the chapters is with the authors of the chapters. All chapters are licensed under the [Creative Commons Attribution 4.0 International License][cc-by].
 Reuse of the material is permitted, provided adequate attribution (such as a link to the corresponding chapter on the [DESOSA book site][desosa]) is included.
 
-Cover image: EWI Faculty, Delft, [TU News](http://tunews.weblog.tudelft.nl/2014/03/11/woon-je-in-delft-en-studeer-je-op-19-maart-dan-kun-je-stemmen-bij-ewi-do-you-live-in-delft-and-are-you-studying-on-19-march-then-you-can-vote-at-eemcs/), Bee by [Freepik](http://www.flaticon.com/authors/freepik).
+Cover image credits: 
+TU Delft library, TheSpeedX at [Wikimedia](https://commons.wikimedia.org/wiki/File:Library_TUDelft.jpg); 
+Owl on [Emojipedia Sample Image Collection](http://emojipedia.org/emojipedia/sample-images) at [Emojipedia](http://emojipedia.org/emojipedia/sample-images/owl);
+Feathers by [Franco Averta](http://www.flaticon.com/authors/franco-averta) at [Flaticon](http://flaticon.com).
 
 
 [![Creative Commons](img/cc-by.png)][cc-by]
