@@ -1,4 +1,6 @@
 # Atom - the hackable text editor
+**By [Rowan Bottema](https://github.com/rbottema), [Ruben Koeze](https://github.com/roebenk), [Robbert van Staveren](https://github.com/robbertvs) and [Freek van Tienen](https://github.com/fvantienen)**   
+_Delft University of Technology_
 
 ![Atom Logo](images/atom.png "Atom logo")
 
