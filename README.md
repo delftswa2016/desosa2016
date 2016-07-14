@@ -2,7 +2,7 @@
 
 
 **[Arie van Deursen], [Maurício Aniche] and [Joop Aué].**<br/>
-*Delft University of Technology, The Netherlands, May 11, 2016, Version 1.0*
+*Delft University of Technology, The Netherlands, May 11, 2016, Version 1.1*
 
 [arie van deursen]: https://avandeursen.com
 [maurício aniche]: https://github.com/mauricioaniche
