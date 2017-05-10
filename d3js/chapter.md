@@ -95,7 +95,7 @@ An example: The data obtained from the filter example above, now looks something
 
 ```Javascript
 var grades = [
-    {language:"Javascript", grade:9,
+    {language:"Javascript", grade:9},
     {language:"C++", grade:8},
     {language:"Ruby", grade:5},
     {language:"Javascript", grade:7},
